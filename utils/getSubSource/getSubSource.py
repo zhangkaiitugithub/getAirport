@@ -30,7 +30,7 @@ def sublist_update(sourceSublist):                  #
 
 def GetSublistUrl():
     today = datetime.datetime.today()
-    path_base = 'https://raw.githubusercontent.com/rxsweet/CollectSub/main'
+    path_base = 'https://raw.githubusercontent.com/rxsweet/collectSub/main/sub/'
     path_year = str(today.year)
     path_mon = path_year+'/'+str(today.month)
     path_yaml = path_base+'/'+path_mon+'/'+str(today.month)+'-'+str(today.day)+'.yaml'
