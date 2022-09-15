@@ -5,7 +5,7 @@ import datetime
 from urllib import request 
 
 source_sublist_path = './config/subsource/subsource.yaml'
-free_sublist_path = './config/free_sublist'
+free_sublist_path = './config/sublist_mining'
 
 
 def get_subSource():     # 
