@@ -50,7 +50,6 @@ if __name__=='__main__':
         data = f.read()
     url_list=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",data)#使用正则表达式查找订阅链接并创建列表
     # url_list = data.split() :list
-    print(url_list)
     thread_max_num =threading.Semaphore(32) #32线程
     bar = tqdm(total=len(url_list), desc='订阅筛选：')
     thread_list = []
@@ -69,7 +68,6 @@ if __name__=='__main__':
         # f.write(str.join(list))
         for url in new_list:
             f.write(url+'\n')
-            print(print(new_list))
         f.close()
 """         
     with open("./logs/old/old","a") as f:
