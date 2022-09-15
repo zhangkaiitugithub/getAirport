@@ -140,20 +140,17 @@ if __name__ == '__main__':
     # 将测速完的check内容转成url节点内容
     input_check_file_path = os.path.abspath(input_check_file)   #python获取绝对路径https://www.jianshu.com/p/1563374e279a
     subContent = sub_convert.convert_remote(input_check_file_path, 'url', 'http://127.0.0.1:25500')
-    print(subContent)
     # 写入url 订阅文件
     print('write rx url sub content!')
     file = open(output_url_path, 'w+', encoding= 'utf-8')
     file.write(subContent)
     file.close()
-    print(subContent)
     # 写入base64 订阅文件
     subContent = sub_convert.base64_encode(subContent)
     print('write rx64 sub content!')
     file = open(output_base64_path, 'w+', encoding= 'utf-8')
     file.write(subContent)
     file.close()
-    print(subContent)
    # 写入Clash 订阅文件
     print('write RXClash begin!')
     eternity_convert(output_base64_path, config_file, output=output_clash_path)
