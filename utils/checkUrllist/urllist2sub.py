@@ -5,7 +5,7 @@ from ip_update import geoip_update  # 更新ip库Country.mmdb
 from sub_convert import sub_convert
 
 #源文件
-sublistfile = './config/sublist_mining'
+urllistfile = './config/sublist_mining'
 #输出订阅文件位置
 outputUrlSub_path = './sub/miningUrl'
 outputBase64Sub_path =  './sub/miningUrl64'
