@@ -64,12 +64,13 @@ if __name__=='__main__':
     for t in thread_list:
         t.join()
     bar.close()
-    print(new_list)
     with open(urllist_path,"w+") as f:
         # str = '\n'
         # f.write(str.join(list))
         for url in new_list:
             f.write(url+'\n')
+            print(print(new_list))
+        f.close()
 """         
     with open("./logs/old/old","a") as f:
         for url in old_list:
