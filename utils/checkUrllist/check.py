@@ -7,6 +7,9 @@ from tqdm import tqdm
 from retry import retry
 from datetime import datetime
 
+#check列表的位置
+urllist_path = './config/sublist_mining'
+
 def sub_check(url,bar):
     headers = {'User-Agent': 'ClashforWindows/0.18.1'}
     with thread_max_num:
@@ -43,7 +46,7 @@ def sub_check(url,bar):
 if __name__=='__main__':
     new_list = []
     old_list = []
-    with open('./config/own_sublist', 'r') as f:
+    with open(urllist_path, 'r') as f:
         data = f.read()
     url_list=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",data)#使用正则表达式查找订阅链接并创建列表
     # url_list = data.split() :list
@@ -61,7 +64,7 @@ if __name__=='__main__':
     for t in thread_list:
         t.join()
     bar.close()
-    with open("./urllist","w") as f:
+    with open(urllist_path,"w") as f:
         # str = '\n'
         # f.write(str.join(list))
         for url in new_list:
