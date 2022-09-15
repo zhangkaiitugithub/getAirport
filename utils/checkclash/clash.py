@@ -57,9 +57,6 @@ def push(list, outfile):
 
 
 def checkenv():
-    home = str(Path.home())
-    mmdbfl = home +'./Country.mmdb'
-    print(mmdbfl)
     operating_system = str(platform.platform())
     if operating_system.startswith('macOS'):
         if 'arm64' in operating_system:
