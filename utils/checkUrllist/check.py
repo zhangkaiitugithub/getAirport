@@ -64,7 +64,8 @@ if __name__=='__main__':
     for t in thread_list:
         t.join()
     bar.close()
-    with open(urllist_path,"w") as f:
+    print(new_list)
+    with open(urllist_path,"w+") as f:
         # str = '\n'
         # f.write(str.join(list))
         for url in new_list:
