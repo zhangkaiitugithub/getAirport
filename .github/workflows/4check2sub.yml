@@ -1,4 +1,4 @@
-name: 5.check to sub
+name: 4.check to sub
 
 # 触发条件
 on:
@@ -41,7 +41,7 @@ jobs:
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin main
-        git add ./
+        git add ./sub
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 最终节点更新 "
     - name: 推送更改
       uses:  ad-m/github-push-action@master
