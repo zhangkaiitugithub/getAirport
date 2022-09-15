@@ -145,14 +145,14 @@ if __name__ == '__main__':
     file = open(output_url_path, 'w', encoding= 'utf-8')
     file.write(subContent)
     file.close()
-
+    print(subContent)
     # 写入base64 订阅文件
     subContent = sub_convert.base64_encode(subContent)
     print('write rx64 sub content!')
     file = open(output_base64_path, 'w', encoding= 'utf-8')
     file.write(subContent)
     file.close()
-
+    print(subContent)
    # 写入Clash 订阅文件
     print('write RXClash begin!')
     eternity_convert(output_base64_path, config_file, output=output_clash_path)
