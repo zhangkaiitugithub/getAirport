@@ -147,16 +147,15 @@ def urlListToSub(urllistfile):
     ownallProxy = '\n'.join(allProxy)
     # 写入url 订阅文件
     print('write miningUrl content!')
-    file = open(outputUrlSub_path, 'w', encoding= 'utf-8')
-    file.write(ownallProxy)
-    file.close()
-
+    with open(outputUrlSub_path, 'w', encoding= 'utf-8') as f:
+    f.write(ownallProxy)
+    f.close()
     # 写入base64 订阅文件
     subContent = sub_convert.base64_encode(ownallProxy)
     print('write miningUrl64 content!')
-    file = open(outputBase64Sub_path, 'w', encoding= 'utf-8')
-    file.write(subContent)
-    file.close()
+    with open(outputBase64Sub_path, 'w', encoding= 'utf-8') as f:
+    f.write(subContent)
+    f.close()
 
    # 写入Clash 订阅文件
     print('write miningClash begin!')
