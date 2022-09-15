@@ -4,7 +4,7 @@ from sub_convert import sub_convert
 from ip_update import geoip_update  #将此行放入需要引用的文件里
 
 # 已测速转url,base64,clash
-input_check_file = './sub/cache/check.yaml'    # 需要查看checkclash文件夹里面config配置文件设置的地址
+input_check_file = './sub/check/check.yaml'    # 需要查看checkclash文件夹里面config配置文件设置的地址
 output_url_path = './sub/check/rx'
 output_base64_path =  './sub/check/rx64'
 output_clash_path = './sub/check/rxClash.yml' 
