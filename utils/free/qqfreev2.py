@@ -63,8 +63,7 @@ class tempsite():
                     f.write(sub_url+'\n')
                 break
             except:
-                pass
-        
+                pass     
 
 def get_conf(): # 根据config.yaml里面的地址，注册新账号获取订阅
     with open(config_file_path,encoding="UTF-8") as f: # 获取config地址内容
