@@ -47,7 +47,7 @@ jobs:
         git config --local user.name "GitHub Actions"
         git pull origin main
         git add ./sub
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 节点测速完成 "
+        git commit -m "节点测速结束 $(date '+%Y-%m-%d %H:%M:%S')"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
       with:
