@@ -1,159 +1,91 @@
-#!MANAGED-CONFIG https://v2ray.mom/link/lDvQcXQ3X1qnjUrC?clash=1
-
 #---------------------------------------------------#
-## 上次更新于：2022-09-16 06:32:44
+## 更新：2022-09-16 08:58:55
+## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
+## 链接：https://v2ray.mom/link/CBSLVI3Mn8Ak7SuH?clash=1
 #---------------------------------------------------#
 
-port: 7890
-socks-port: 7891
-redir-port: 7892
-allow-lan: false
+# HTTP 代理端口
+port: 7890 
+
+# SOCKS5 代理端口
+socks-port: 7891 
+
+# Linux 和 macOS 的 redir 代理端口
+redir-port: 7892 
+
+# 允许局域网的连接
+allow-lan: true
+
+# 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
 mode: rule
+
+# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
+# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
 log-level: silent
+# Clash 的 RESTful API
 external-controller: '0.0.0.0:9090'
-secret: ''
+
+# RESTful API 的口令
+secret: '' 
+
+# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
+# 参数应填写配置目录的相对路径或绝对路径。
+# external-ui: folder
+
+
 proxies:
-  -
-    name: 香港-01丨免费用户限速512Kb
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
-  -
-    name: 香港-02丨原生流媒体
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
-  -
-    name: 香港-03丨原生流媒体
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
-  -
-    name: 香港-04丨原生流媒体
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
-  -
-    name: 香港-05丨原生流媒体
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
-  -
-    name: 香港-06丨原生流媒体
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
-  -
-    name: 香港-07丨原生流媒体
-    type: trojan
-    server: hkbgp.v2yyds.com
-    port: 49511
-    password: 58df37aa-0070-34c7-85c5-f7c0d871117b
-    sni: hkbgp.v2yyds.com
+
 proxy-groups:
-  -
-    name: 🔰国外流量
-    type: select
-    proxies:
-      - 香港-01丨免费用户限速512Kb
-      - 香港-02丨原生流媒体
-      - 香港-03丨原生流媒体
-      - 香港-04丨原生流媒体
-      - 香港-05丨原生流媒体
-      - 香港-06丨原生流媒体
-      - 香港-07丨原生流媒体
-      - 🚀直接连接
-  -
-    name: ⚓️其他流量
-    type: select
-    proxies:
-      - 🔰国外流量
-      - 🚀直接连接
-  -
-    name: ✈️Telegram
-    type: select
-    proxies:
-      - 🔰国外流量
-      - 香港-01丨免费用户限速512Kb
-      - 香港-02丨原生流媒体
-      - 香港-03丨原生流媒体
-      - 香港-04丨原生流媒体
-      - 香港-05丨原生流媒体
-      - 香港-06丨原生流媒体
-      - 香港-07丨原生流媒体
-  -
-    name: 🎬Youtube
-    type: select
-    proxies:
-      - 🔰国外流量
-      - 香港-01丨免费用户限速512Kb
-      - 香港-02丨原生流媒体
-      - 香港-03丨原生流媒体
-      - 香港-04丨原生流媒体
-      - 香港-05丨原生流媒体
-      - 香港-06丨原生流媒体
-      - 香港-07丨原生流媒体
-  -
-    name: 🎬Netflix
-    type: select
-    proxies:
-      - 🔰国外流量
-      - 香港-01丨免费用户限速512Kb
-      - 香港-02丨原生流媒体
-      - 香港-03丨原生流媒体
-      - 香港-04丨原生流媒体
-      - 香港-05丨原生流媒体
-      - 香港-06丨原生流媒体
-      - 香港-07丨原生流媒体
-  -
-    name: 🎬哔哩哔哩
-    type: select
-    proxies:
-      - 🚀直接连接
-      - 香港-01丨免费用户限速512Kb
-      - 香港-02丨原生流媒体
-      - 香港-03丨原生流媒体
-      - 香港-04丨原生流媒体
-      - 香港-05丨原生流媒体
-      - 香港-06丨原生流媒体
-      - 香港-07丨原生流媒体
-  -
-    name: 🎬国外媒体
-    type: select
-    proxies:
-      - 🔰国外流量
-      - 香港-01丨免费用户限速512Kb
-      - 香港-02丨原生流媒体
-      - 香港-03丨原生流媒体
-      - 香港-04丨原生流媒体
-      - 香港-05丨原生流媒体
-      - 香港-06丨原生流媒体
-      - 香港-07丨原生流媒体
-  -
-    name: 🍎苹果服务
-    type: select
-    proxies:
-      - 🚀直接连接
-      - 🔰国外流量
-  -
-    name: 🚀直接连接
-    type: select
-    proxies:
-      - DIRECT
+-
+  name: 🔰国外流量
+  type: select
+  proxies:
+    - 🚀直接连接
+-
+  name: ⚓️其他流量
+  type: select
+  proxies:
+    - 🔰国外流量
+    - 🚀直接连接
+-
+  name: ✈️Telegram
+  type: select
+  proxies:
+    - 🔰国外流量
+-
+  name: 🎬Youtube
+  type: select
+  proxies:
+    - 🔰国外流量
+-
+  name: 🎬Netflix
+  type: select
+  proxies:
+    - 🔰国外流量
+-
+  name: 🎬哔哩哔哩
+  type: select
+  proxies:
+    - 🚀直接连接
+-
+  name: 🎬国外媒体
+  type: select
+  proxies:
+    - 🔰国外流量
+-
+  name: 🍎苹果服务
+  type: select
+  proxies:
+    - 🚀直接连接
+    - 🔰国外流量
+-
+  name: 🚀直接连接
+  type: select
+  proxies:
+    - DIRECT
 
 
+# 规则
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
