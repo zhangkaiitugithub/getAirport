@@ -63,9 +63,7 @@ class tempsite():
                     f.write(sub_url+'\n')
                 break
             except:
-                v2conf=""
-        with open(out_freesub_path+self._name,"w") as f:
-                    f.write(v2conf)     # 根据获取的网站名称将订阅内容写入./free/目录下的网站名文件里面
+                pass
         
 
 def get_conf(): # 根据config.yaml里面的地址，注册新账号获取订阅
