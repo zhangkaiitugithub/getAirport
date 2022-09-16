@@ -1,17 +1,17 @@
 proxies:
 - name: "\U0001F1FA\U0001F1F8 US 1"
-  server: los.ydnode.us
-  port: 90
-  type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: los.ydnode.us
-  skip-cert-verify: true
-- name: "\U0001F1FA\U0001F1F8 US 2"
   server: san.ydnode.us
   port: 443
   type: trojan
   password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
   sni: san.ydnode.us
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 2"
+  server: los.ydnode.us
+  port: 90
+  type: trojan
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: los.ydnode.us
   skip-cert-verify: true
 - name: "\U0001F1FA\U0001F1F8 US 3"
   server: su1.chaoxn.top
@@ -41,28 +41,14 @@ proxies:
     path: /
     headers:
       Host: su3.chaoxn.top
-- name: "\U0001F1E9\U0001F1EA DE 5"
-  server: s2.hass.win
-  port: 12340
-  type: trojan
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  sni: static.dingtalk.com
-  skip-cert-verify: true
-- name: "\U0001F1E9\U0001F1EA DE 6"
-  server: o1.chaoxn.top
+- name: "\U0001F1E8\U0001F1F3 HK 5"
+  server: freehk.ydnode.us
   port: 80
-  type: vmess
-  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: o1.chaoxn.top
-- name: "\U0001F1EF\U0001F1F5 JP 7"
+  type: trojan
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: freehk.ydnode.us
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 JP 6"
   server: jp1.chaoxn.top
   port: 80
   type: vmess
@@ -76,29 +62,8 @@ proxies:
     path: /
     headers:
       Host: jp1.chaoxn.top
-- name: "\U0001F1E8\U0001F1F3 HK 8"
-  server: freehk.ydnode.us
-  port: 80
-  type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: freehk.ydnode.us
-  skip-cert-verify: true
-- name: "\U0001F1F8\U0001F1EC SG 9"
-  server: k1.chaoxn.top
-  port: 80
-  type: vmess
-  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: k1.chaoxn.top
-- name: "\U0001F1F9\U0001F1F7 TR 10"
-  server: turkey.jcnf.app
+- name: "\U0001F1F1\U0001F1FA LU 7"
+  server: lsb.ycsfree.xyz
   port: 443
   type: vmess
   uuid: c753e8a8-e180-4e76-a486-c917273d718b
@@ -110,8 +75,49 @@ proxies:
   ws-opts:
     path: /zcjd
     headers:
-      Host: turkey.jcnf.app
-- name: "\U0001F1E8\U0001F1F3 HK 11"
+      Host: lsb.ycsfree.xyz
+- name: "\U0001F1E9\U0001F1EA DE 8"
+  server: o1.chaoxn.top
+  port: 80
+  type: vmess
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: o1.chaoxn.top
+- name: "\U0001F1F8\U0001F1EC SG 9"
+  server: agroup.node3.t.nodelist-gfwairport.download
+  port: 50001
+  type: trojan
+  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA DE 10"
+  server: s2.hass.win
+  port: 12340
+  type: trojan
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  sni: static.dingtalk.com
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 US 11"
+  server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+- name: "\U0001F1E8\U0001F1F3 HK 12"
   server: hk-1.4g.mkvn.net
   port: 80
   type: vmess
@@ -125,21 +131,21 @@ proxies:
     path: /4g.mkvn.net
     headers:
       Host: dl.kgvn.garenanow.com
-- name: "\U0001F1F8\U0001F1EC SG 12"
-  server: sing-3.4g.mkvn.net
+- name: "\U0001F1F8\U0001F1EC SG 13"
+  server: k1.chaoxn.top
   port: 80
   type: vmess
-  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
   tls: false
   ws-opts:
-    path: /4g.mkvn.net
+    path: /
     headers:
-      Host: dl.kgvn.garenanow.com
-- name: "\U0001F1FA\U0001F1F8 US 13"
+      Host: k1.chaoxn.top
+- name: "\U0001F1FA\U0001F1F8 US 14"
   server: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
   port: 443
   type: vmess
@@ -153,7 +159,35 @@ proxies:
     path: /
     headers:
       Host: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
-- name: "\U0001F1FA\U0001F1F8 US 14"
+- name: "\U0001F1F8\U0001F1EC SG 15"
+  server: sing-3.4g.mkvn.net
+  port: 80
+  type: vmess
+  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /4g.mkvn.net
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: "\U0001F1F9\U0001F1F7 TR 16"
+  server: turkey.jcnf.app
+  port: 443
+  type: vmess
+  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /zcjd
+    headers:
+      Host: turkey.jcnf.app
+- name: "\U0001F1FA\U0001F1F8 US 17"
   server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
   port: 10392
   type: vmess
@@ -167,35 +201,7 @@ proxies:
     path: /
     headers:
       Host: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
-- name: "\U0001F1EE\U0001F1F3 IN 15"
-  server: india.ycsfree.xyz
-  port: 443
-  type: vmess
-  uuid: c753e8a8-e180-4e76-a486-c917273d718b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /zcjd
-    headers:
-      Host: india.ycsfree.xyz
-- name: "\U0001F1EB\U0001F1F7 FR 16"
-  server: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
-  port: 12659
-  type: vmess
-  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
-- name: "\U0001F1FB\U0001F1F3 VN 17"
+- name: "\U0001F1FB\U0001F1F3 VN 18"
   server: hcm-1.4g.mkvn.net
   port: 80
   type: vmess
@@ -209,7 +215,35 @@ proxies:
     path: /4g.mkvn.net
     headers:
       Host: dl.kgvn.garenanow.com
-- name: "\U0001F1FA\U0001F1F8 US 18"
+- name: "\U0001F1FA\U0001F1F8 US 19"
+  server: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+- name: "\U0001F1FA\U0001F1F8 US 20"
+  server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+- name: "\U0001F1FA\U0001F1F8 US 21"
   server: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
   port: 12356
   type: vmess
@@ -223,9 +257,9 @@ proxies:
     path: /
     headers:
       Host: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
-- name: "\U0001F1EF\U0001F1F5 JP 19"
-  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
-  port: 12356
+- name: "\U0001F1EF\U0001F1F5 JP 22"
+  server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+  port: 52356
   type: vmess
   uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
   alterId: 0
@@ -236,22 +270,36 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
-- name: "\U0001F1EB\U0001F1F7 FR 20"
-  server: 193.70.33.128
-  port: 17772
+      Host: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+- name: "\U0001F1F0\U0001F1F7 KR 23"
+  server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
+  port: 52356
   type: vmess
-  uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
+- name: "\U0001F1EE\U0001F1F3 IN 24"
+  server: india.ycsfree.xyz
+  port: 443
+  type: vmess
+  uuid: c753e8a8-e180-4e76-a486-c917273d718b
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
-  tls: false
+  tls: true
   ws-opts:
-    path: /cctv13/hd.m3u8
+    path: /zcjd
     headers:
-      Host: 193.70.33.128
-- name: "\U0001F1F8\U0001F1EC SG 21"
+      Host: india.ycsfree.xyz
+- name: "\U0001F1F8\U0001F1EC SG 25"
   server: sgp.ycsfree.xyz
   port: 443
   type: vmess
@@ -273,23 +321,27 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1F1\U0001F1FA LU 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1F9\U0001F1F7 TR 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
   - "\U0001F1FA\U0001F1F8 US 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1EB\U0001F1F7 FR 16"
-  - "\U0001F1FB\U0001F1F3 VN 17"
-  - "\U0001F1FA\U0001F1F8 US 18"
-  - "\U0001F1EF\U0001F1F5 JP 19"
-  - "\U0001F1EB\U0001F1F7 FR 20"
-  - "\U0001F1F8\U0001F1EC SG 21"
+  - "\U0001F1F8\U0001F1EC SG 15"
+  - "\U0001F1F9\U0001F1F7 TR 16"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FB\U0001F1F3 VN 18"
+  - "\U0001F1FA\U0001F1F8 US 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
+  - "\U0001F1FA\U0001F1F8 US 21"
+  - "\U0001F1EF\U0001F1F5 JP 22"
+  - "\U0001F1F0\U0001F1F7 KR 23"
+  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1F8\U0001F1EC SG 25"
   url: https://www.google.com/favicon.ico
   interval: 300
 - name: "\U0001F310 Proxy"
@@ -300,22 +352,26 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 US 2"
   - "\U0001F1FA\U0001F1F8 US 3"
   - "\U0001F1FA\U0001F1F8 US 4"
-  - "\U0001F1E9\U0001F1EA DE 5"
-  - "\U0001F1E9\U0001F1EA DE 6"
-  - "\U0001F1EF\U0001F1F5 JP 7"
-  - "\U0001F1E8\U0001F1F3 HK 8"
+  - "\U0001F1E8\U0001F1F3 HK 5"
+  - "\U0001F1EF\U0001F1F5 JP 6"
+  - "\U0001F1F1\U0001F1FA LU 7"
+  - "\U0001F1E9\U0001F1EA DE 8"
   - "\U0001F1F8\U0001F1EC SG 9"
-  - "\U0001F1F9\U0001F1F7 TR 10"
-  - "\U0001F1E8\U0001F1F3 HK 11"
-  - "\U0001F1F8\U0001F1EC SG 12"
-  - "\U0001F1FA\U0001F1F8 US 13"
+  - "\U0001F1E9\U0001F1EA DE 10"
+  - "\U0001F1FA\U0001F1F8 US 11"
+  - "\U0001F1E8\U0001F1F3 HK 12"
+  - "\U0001F1F8\U0001F1EC SG 13"
   - "\U0001F1FA\U0001F1F8 US 14"
-  - "\U0001F1EE\U0001F1F3 IN 15"
-  - "\U0001F1EB\U0001F1F7 FR 16"
-  - "\U0001F1FB\U0001F1F3 VN 17"
-  - "\U0001F1FA\U0001F1F8 US 18"
-  - "\U0001F1EF\U0001F1F5 JP 19"
-  - "\U0001F1EB\U0001F1F7 FR 20"
-  - "\U0001F1F8\U0001F1EC SG 21"
+  - "\U0001F1F8\U0001F1EC SG 15"
+  - "\U0001F1F9\U0001F1F7 TR 16"
+  - "\U0001F1FA\U0001F1F8 US 17"
+  - "\U0001F1FB\U0001F1F3 VN 18"
+  - "\U0001F1FA\U0001F1F8 US 19"
+  - "\U0001F1FA\U0001F1F8 US 20"
+  - "\U0001F1FA\U0001F1F8 US 21"
+  - "\U0001F1EF\U0001F1F5 JP 22"
+  - "\U0001F1F0\U0001F1F7 KR 23"
+  - "\U0001F1EE\U0001F1F3 IN 24"
+  - "\U0001F1F8\U0001F1EC SG 25"
 rules:
 - "MATCH,\U0001F310 Proxy"
