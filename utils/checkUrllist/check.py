@@ -68,7 +68,6 @@ if __name__=='__main__':
         # f.write(str.join(list))
         for url in new_list:
             f.write(url+'\n')
-        f.close()
 """         
     with open("./logs/old/old","a") as f:
         for url in old_list:
