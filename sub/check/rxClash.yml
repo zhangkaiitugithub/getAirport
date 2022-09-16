@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇩🇪DE-138.68.97.165-00
-  server: s2.hass.win
-  port: 12340
+- name: 🇺🇸US-107.172.217.30-00
+  server: san.ydnode.us
+  port: 443
   type: trojan
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  sni: static.dingtalk.com
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: san.ydnode.us
   skip-cert-verify: true
 - name: 🇺🇸US-194.5.154.17-01
   server: los.ydnode.us
@@ -19,14 +19,35 @@ proxies:
   password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
   sni: los.ydnode.us
   skip-cert-verify: true
-- name: 🇺🇸US-107.172.217.30-02
-  server: san.ydnode.us
-  port: 443
+- name: 🇩🇪DE-138.68.97.165-02
+  server: s2.hass.win
+  port: 12340
   type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: san.ydnode.us
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  sni: static.dingtalk.com
   skip-cert-verify: true
-- name: 🇱🇺LU-104.244.79.7-03
+- name: 🇺🇸US-147.182.239.174-03
+  server: s1.hass.win
+  port: 12340
+  type: trojan
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  sni: static.dingtalk.com
+  skip-cert-verify: true
+- name: 🇺🇸US-205.185.121.4-04
+  server: su1.chaoxn.top
+  port: 80
+  type: vmess
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: su1.chaoxn.top
+- name: 🇱🇺LU-104.244.79.7-05
   server: lsb.ycsfree.xyz
   port: 443
   type: vmess
@@ -40,42 +61,42 @@ proxies:
     path: /zcjd
     headers:
       Host: lsb.ycsfree.xyz
-- name: 🇺🇸US-147.182.239.174-04
-  server: s1.hass.win
-  port: 12340
+- name: 🇺🇸US-205.185.114.137-06
+  server: su3.chaoxn.top
+  port: 80
+  type: vmess
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: su3.chaoxn.top
+- name: 🇭🇰HK-218.188.148.30-07
+  server: freehk.ydnode.us
+  port: 80
   type: trojan
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  sni: static.dingtalk.com
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: freehk.ydnode.us
   skip-cert-verify: true
-- name: 🇭🇰HK-20.2.80.51-05
-  server: hk-1.4g.mkvn.net
+- name: 🇩🇪DE-5.183.179.104-08
+  server: o1.chaoxn.top
   port: 80
   type: vmess
-  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
   tls: false
   ws-opts:
-    path: /4g.mkvn.net
+    path: /
     headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇸🇬SG-54.169.103.9-06
-  server: sing-3.4g.mkvn.net
-  port: 80
-  type: vmess
-  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /4g.mkvn.net
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇹🇷TR-141.98.118.109-07
+      Host: o1.chaoxn.top
+- name: 🇹🇷TR-141.98.118.109-09
   server: turkey.jcnf.app
   port: 443
   type: vmess
@@ -89,14 +110,7 @@ proxies:
     path: /zcjd
     headers:
       Host: turkey.jcnf.app
-- name: 🇭🇰HK-218.188.148.30-08
-  server: freehk.ydnode.us
-  port: 80
-  type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: freehk.ydnode.us
-  skip-cert-verify: true
-- name: 🇮🇳IN-152.67.12.46-09
+- name: 🇮🇳IN-152.67.12.46-10
   server: india.ycsfree.xyz
   port: 443
   type: vmess
@@ -110,7 +124,49 @@ proxies:
     path: /zcjd
     headers:
       Host: india.ycsfree.xyz
-- name: 🇻🇳VN-103.3.244.135-10
+- name: 🇸🇬SG-209.97.160.164-11
+  server: k1.chaoxn.top
+  port: 80
+  type: vmess
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: k1.chaoxn.top
+- name: 🇭🇰HK-20.2.80.51-12
+  server: hk-1.4g.mkvn.net
+  port: 80
+  type: vmess
+  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /4g.mkvn.net
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: 🇸🇬SG-54.169.103.9-13
+  server: sing-3.4g.mkvn.net
+  port: 80
+  type: vmess
+  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /4g.mkvn.net
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: 🇻🇳VN-103.3.244.135-14
   server: hcm-1.4g.mkvn.net
   port: 80
   type: vmess
@@ -124,21 +180,7 @@ proxies:
     path: /4g.mkvn.net
     headers:
       Host: dl.kgvn.garenanow.com
-- name: 🇺🇸US-152.67.252.170-11
-  server: jgwus.jgwaad.tk
-  port: 443
-  type: vmess
-  uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /cctv13/hd.m3u8
-    headers:
-      Host: jgwus.jgwaad.tk
-- name: 🇸🇬SG-129.150.33.76-12
+- name: 🇸🇬SG-129.150.33.76-15
   server: sgp.ycsfree.xyz
   port: 443
   type: vmess
@@ -152,6 +194,34 @@ proxies:
     path: /zcjd
     headers:
       Host: sgp.ycsfree.xyz
+- name: 🇯🇵JP-43.153.173.29-16
+  server: jp1.chaoxn.top
+  port: 80
+  type: vmess
+  uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: jp1.chaoxn.top
+- name: 🇫🇷FR-193.70.33.128-17
+  server: 193.70.33.128
+  port: 17772
+  type: vmess
+  uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /cctv13/hd.m3u8
+    headers:
+      Host: 193.70.33.128
 proxy-groups:
 - name: 节点选择
   type: select
@@ -167,48 +237,57 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - 🇭🇰HK-20.2.80.51-05
-  - 🇭🇰HK-218.188.148.30-08
+  - 🇭🇰HK-218.188.148.30-07
+  - 🇭🇰HK-20.2.80.51-12
 - name: 日本节点
   type: select
   proxies:
-  - DIRECT
+  - 🇯🇵JP-43.153.173.29-16
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-54.169.103.9-06
-  - 🇸🇬SG-129.150.33.76-12
+  - 🇸🇬SG-209.97.160.164-11
+  - 🇸🇬SG-54.169.103.9-13
+  - 🇸🇬SG-129.150.33.76-15
 - name: 其他节点
   type: select
   proxies:
-  - 🇩🇪DE-138.68.97.165-00
+  - 🇺🇸US-107.172.217.30-00
   - 🇺🇸US-194.5.154.17-01
-  - 🇺🇸US-107.172.217.30-02
-  - 🇱🇺LU-104.244.79.7-03
-  - 🇺🇸US-147.182.239.174-04
-  - 🇹🇷TR-141.98.118.109-07
-  - 🇮🇳IN-152.67.12.46-09
-  - 🇻🇳VN-103.3.244.135-10
-  - 🇺🇸US-152.67.252.170-11
+  - 🇩🇪DE-138.68.97.165-02
+  - 🇺🇸US-147.182.239.174-03
+  - 🇺🇸US-205.185.121.4-04
+  - 🇱🇺LU-104.244.79.7-05
+  - 🇺🇸US-205.185.114.137-06
+  - 🇩🇪DE-5.183.179.104-08
+  - 🇹🇷TR-141.98.118.109-09
+  - 🇮🇳IN-152.67.12.46-10
+  - 🇻🇳VN-103.3.244.135-14
+  - 🇫🇷FR-193.70.33.128-17
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇩🇪DE-138.68.97.165-00
+  - 🇺🇸US-107.172.217.30-00
   - 🇺🇸US-194.5.154.17-01
-  - 🇺🇸US-107.172.217.30-02
-  - 🇱🇺LU-104.244.79.7-03
-  - 🇺🇸US-147.182.239.174-04
-  - 🇭🇰HK-20.2.80.51-05
-  - 🇸🇬SG-54.169.103.9-06
-  - 🇹🇷TR-141.98.118.109-07
-  - 🇭🇰HK-218.188.148.30-08
-  - 🇮🇳IN-152.67.12.46-09
-  - 🇻🇳VN-103.3.244.135-10
-  - 🇺🇸US-152.67.252.170-11
-  - 🇸🇬SG-129.150.33.76-12
+  - 🇩🇪DE-138.68.97.165-02
+  - 🇺🇸US-147.182.239.174-03
+  - 🇺🇸US-205.185.121.4-04
+  - 🇱🇺LU-104.244.79.7-05
+  - 🇺🇸US-205.185.114.137-06
+  - 🇭🇰HK-218.188.148.30-07
+  - 🇩🇪DE-5.183.179.104-08
+  - 🇹🇷TR-141.98.118.109-09
+  - 🇮🇳IN-152.67.12.46-10
+  - 🇸🇬SG-209.97.160.164-11
+  - 🇭🇰HK-20.2.80.51-12
+  - 🇸🇬SG-54.169.103.9-13
+  - 🇻🇳VN-103.3.244.135-14
+  - 🇸🇬SG-129.150.33.76-15
+  - 🇯🇵JP-43.153.173.29-16
+  - 🇫🇷FR-193.70.33.128-17
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -216,38 +295,48 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇩🇪DE-138.68.97.165-00
+  - 🇺🇸US-107.172.217.30-00
   - 🇺🇸US-194.5.154.17-01
-  - 🇺🇸US-107.172.217.30-02
-  - 🇱🇺LU-104.244.79.7-03
-  - 🇺🇸US-147.182.239.174-04
-  - 🇭🇰HK-20.2.80.51-05
-  - 🇸🇬SG-54.169.103.9-06
-  - 🇹🇷TR-141.98.118.109-07
-  - 🇭🇰HK-218.188.148.30-08
-  - 🇮🇳IN-152.67.12.46-09
-  - 🇻🇳VN-103.3.244.135-10
-  - 🇺🇸US-152.67.252.170-11
-  - 🇸🇬SG-129.150.33.76-12
+  - 🇩🇪DE-138.68.97.165-02
+  - 🇺🇸US-147.182.239.174-03
+  - 🇺🇸US-205.185.121.4-04
+  - 🇱🇺LU-104.244.79.7-05
+  - 🇺🇸US-205.185.114.137-06
+  - 🇭🇰HK-218.188.148.30-07
+  - 🇩🇪DE-5.183.179.104-08
+  - 🇹🇷TR-141.98.118.109-09
+  - 🇮🇳IN-152.67.12.46-10
+  - 🇸🇬SG-209.97.160.164-11
+  - 🇭🇰HK-20.2.80.51-12
+  - 🇸🇬SG-54.169.103.9-13
+  - 🇻🇳VN-103.3.244.135-14
+  - 🇸🇬SG-129.150.33.76-15
+  - 🇯🇵JP-43.153.173.29-16
+  - 🇫🇷FR-193.70.33.128-17
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇩🇪DE-138.68.97.165-00
+  - 🇺🇸US-107.172.217.30-00
   - 🇺🇸US-194.5.154.17-01
-  - 🇺🇸US-107.172.217.30-02
-  - 🇱🇺LU-104.244.79.7-03
-  - 🇺🇸US-147.182.239.174-04
-  - 🇭🇰HK-20.2.80.51-05
-  - 🇸🇬SG-54.169.103.9-06
-  - 🇹🇷TR-141.98.118.109-07
-  - 🇭🇰HK-218.188.148.30-08
-  - 🇮🇳IN-152.67.12.46-09
-  - 🇻🇳VN-103.3.244.135-10
-  - 🇺🇸US-152.67.252.170-11
-  - 🇸🇬SG-129.150.33.76-12
+  - 🇩🇪DE-138.68.97.165-02
+  - 🇺🇸US-147.182.239.174-03
+  - 🇺🇸US-205.185.121.4-04
+  - 🇱🇺LU-104.244.79.7-05
+  - 🇺🇸US-205.185.114.137-06
+  - 🇭🇰HK-218.188.148.30-07
+  - 🇩🇪DE-5.183.179.104-08
+  - 🇹🇷TR-141.98.118.109-09
+  - 🇮🇳IN-152.67.12.46-10
+  - 🇸🇬SG-209.97.160.164-11
+  - 🇭🇰HK-20.2.80.51-12
+  - 🇸🇬SG-54.169.103.9-13
+  - 🇻🇳VN-103.3.244.135-14
+  - 🇸🇬SG-129.150.33.76-15
+  - 🇯🇵JP-43.153.173.29-16
+  - 🇫🇷FR-193.70.33.128-17
 - name: 谷歌服务
   type: select
   proxies:
