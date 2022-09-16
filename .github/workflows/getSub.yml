@@ -55,6 +55,10 @@ jobs:
     - name: 执行任务 - 5.check2sub.py
       run:
        python ./utils/checkclash/check2sub/check2sub.py
+    - name: 执行任务 - 6.fetchFreeAirport
+      run: |
+        python ./utils/free/main.py
+        python ./utils/free/myUseClash/freess.py
     - name: Commit
       run: |
         git config --global user.name "GitHub Actions"
