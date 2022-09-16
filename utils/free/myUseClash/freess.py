@@ -3,7 +3,7 @@ import yaml
 import urllib
 import requests,random,string
 # config.yaml配置文件地址
-config_file_path = './utils/free/myUse/config.yaml'
+config_file_path = './utils/free/myUseClash/config.yaml'
 out_list_file_path = './sub/free/clash/sublist_freeclash'
 out_freesub_path = "./sub/free/clash/"
 
