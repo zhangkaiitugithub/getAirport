@@ -88,13 +88,11 @@ class tempsite():
 
     def save_conf(self):    # 注册账号，获取订阅内容，写入list_file_path地址文件和./free/内容文件夹
         sub_url=self.getSubscribe() # 注册url网站账号，返回sub订阅地址
-        print(sub_url)
         #retry
         for k in range(3):
             try:
                 req=requests.get(sub_url,timeout=5) # 获取订阅内容
                 v2conf=req.text              # 将订阅内容的节点信息赋值v2conf
-                print(v2conf)
                 with open(out_list_file_path, 'a') as f:
                     f.write(sub_url+'\n')            # 将订阅地址写入sub_url文件
                 break
@@ -107,7 +105,6 @@ def get_conf():     # 根据config.yaml里面的地址，注册新账号获取�
     with open(config_file_path,encoding="UTF-8") as f:  # 获取config地址内容
         data = yaml.load(f, Loader=yaml.FullLoader)
     url_list = data['SSpanel']       # 将SSpanel格式网站地址取出到url_list
-    print('url_list = '+str(url_list))
     for url in url_list:                #读取url_list的地址
         sub = tempsite(url)             # 定义一个sub名字的tempsite()类，默认初始化类_init_(self，url，proxy = None)
         try:
@@ -117,6 +114,4 @@ def get_conf():     # 根据config.yaml里面的地址，注册新账号获取�
             pass  
 
 if __name__=='__main__':
-    print('Go go go,bigen！')
     get_conf()
-    print('Go go go,over！')
