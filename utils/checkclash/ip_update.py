@@ -1,7 +1,6 @@
-# from ip_update import geoip_update  #将此行放入需要引用的文件里
-#---使用下行代码----   
-#geoip_update()
-#---默认下载位置 './Country.mmdb'---
+# from ip_update import geoip_update  #更新IP位置数据库,将此行放入需要引用的文件里使用'geoip_update()'即可用的文件里
+# 默认下载位置 './Country.mmdb'---
+
 from urllib import request          # Urllib是python内置的HTTP请求库,urllib.request获取URL的Python模块
 
 #Country.mmdb 下载地址
