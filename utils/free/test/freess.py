@@ -88,11 +88,13 @@ class tempsite():
 
     def save_conf(self):    # 注册账号，获取订阅内容，写入list_file_path地址文件和./free/内容文件夹
         sub_url=self.getSubscribe() # 注册url网站账号，返回sub订阅地址
+        print(sub_url)
         #retry
         for k in range(3):
             try:
                 req=requests.get(sub_url,timeout=5) # 获取订阅内容
                 v2conf=req.text              # 将订阅内容的节点信息赋值v2conf
+                print(v2conf)
                 with open(out_list_file_path, 'a') as f:
                     f.write(sub_url+'\n')            # 将订阅地址写入sub_url文件
                 break
