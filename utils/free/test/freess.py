@@ -72,9 +72,9 @@ class tempsite():
             resp = session.get(self._user_url,headers=headers,timeout=5,proxies=self._proxies)
             # print(resp.text)
             try:
-                token = re.search("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+clash=1", resp.text).group(0)
-            except:
                 token= re.search("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+sub=3", resp.text).group(0)
+            except:
+                token = re.search("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+clash=1", resp.text).group(0)
             self._sub = token
             print(token)
         return token    # 返回解析完的订阅地址
