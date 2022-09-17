@@ -5,45 +5,18 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇺🇸US-194.5.154.17-00
-  server: los.ydnode.us
-  port: 90
+- name: 🇨🇦CA-172.105.26.180-00
+  server: tt7.tjvpn.top
+  port: 2022
   type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: los.ydnode.us
+  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
+  sni: tt7.tjvpn.top
   skip-cert-verify: true
-- name: 🇺🇸US-137.184.226.150-01
-  server: s1.hass.win
-  port: 12340
-  type: trojan
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  sni: static.dingtalk.com
-  skip-cert-verify: true
-- name: 🇩🇪DE-138.68.97.165-02
-  server: s2.hass.win
-  port: 12340
-  type: trojan
-  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
-  sni: static.dingtalk.com
-  skip-cert-verify: true
-- name: 🇺🇸US-18.144.83.110-03
-  server: agroup.node5.t.nodelist-gfwairport.download
-  port: 50001
-  type: trojan
-  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
-  skip-cert-verify: true
-- name: 🇭🇰HK-218.188.148.30-04
-  server: freehk.ydnode.us
-  port: 80
-  type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: freehk.ydnode.us
-  skip-cert-verify: true
-- name: 🇯🇵JP-52.194.184.142-05
-  server: agroup.node1.v.nodelist-gfwairport.download
-  port: 50001
+- name: 🇺🇸US-34.223.105.106-01
+  server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
+  port: 10392
   type: vmess
-  uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
@@ -52,42 +25,148 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: freehk.ydnode.us
-- name: 🇺🇸US-192.9.226.158-06
-  server: usa.jcnf.app
+      Host: tt7.tjvpn.top
+- name: 🇺🇸US-54.215.173.102-02
+  server: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
   port: 443
   type: vmess
-  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
-  network: ws
-  tls: true
+  network: tcp
+  tls: false
   ws-opts:
-    path: /zcjd
+    path: /
     headers:
-      Host: usa.jcnf.app
-- name: 🇯🇵JP-3.113.12.244-07
-  server: agroup.node1.t.nodelist-gfwairport.download
-  port: 50001
-  type: trojan
-  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
-  skip-cert-verify: true
-- name: 🇨🇦CA-172.105.26.180-08
-  server: tt7.tjvpn.top
-  port: 2022
-  type: trojan
-  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
-  sni: tt7.tjvpn.top
-  skip-cert-verify: true
-- name: 🇩🇪DE-172.104.238.6-09
+      Host: tt7.tjvpn.top
+- name: 🇺🇸US-54.219.108.39-03
+  server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt7.tjvpn.top
+- name: 🇺🇸US-54.219.58.83-04
+  server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt7.tjvpn.top
+- name: 🇺🇸US-54.176.100.254-05
+  server: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt7.tjvpn.top
+- name: 🇩🇪DE-172.104.238.6-06
   server: tt1.tjvpn.top
   port: 2022
   type: trojan
   password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
   sni: tt1.tjvpn.top
   skip-cert-verify: true
-- name: 🇭🇰HK-20.2.80.51-10
+- name: 🇯🇵JP-54.178.41.254-07
+  server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt1.tjvpn.top
+- name: 🇯🇵JP-3.113.29.139-08
+  server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt1.tjvpn.top
+- name: 🇬🇧GB-132.145.63.178-09
+  server: tt0.tjvpn.top
+  port: 2083
+  type: trojan
+  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
+  sni: tt0.tjvpn.top
+  skip-cert-verify: true
+- name: 🇯🇵JP-172.105.195.114-10
+  server: tt6.tjvpn.top
+  port: 443
+  type: trojan
+  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
+  sni: tt6.tjvpn.top
+  skip-cert-verify: true
+- name: 🇯🇵JP-54.199.217.80-11
+  server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt6.tjvpn.top
+- name: 🇯🇵JP-18.182.23.24-12
+  server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt6.tjvpn.top
+- name: 🇨🇱CL-129.151.117.8-13
+  server: tt2.tjvpn.top
+  port: 520
+  type: trojan
+  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
+  sni: tt2.tjvpn.top
+  skip-cert-verify: true
+- name: 🇭🇰HK-20.2.80.51-14
   server: hk-1.4g.mkvn.net
   port: 80
   type: vmess
@@ -101,7 +180,13 @@ proxies:
     path: /4g.mkvn.net
     headers:
       Host: dl.kgvn.garenanow.com
-- name: 🇸🇬SG-54.169.103.9-11
+- name: 🇺🇸US-18.144.83.110-15
+  server: agroup.node5.t.nodelist-gfwairport.download
+  port: 50001
+  type: trojan
+  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
+  skip-cert-verify: true
+- name: 🇸🇬SG-54.169.103.9-16
   server: sing-3.4g.mkvn.net
   port: 80
   type: vmess
@@ -115,29 +200,50 @@ proxies:
     path: /4g.mkvn.net
     headers:
       Host: dl.kgvn.garenanow.com
-- name: 🇬🇧GB-132.145.63.178-12
-  server: tt0.tjvpn.top
-  port: 2083
+- name: 🇯🇵JP-18.176.182.86-17
+  server: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /4g.mkvn.net
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: 🇰🇷KR-152.69.228.14-18
+  server: tt3.tjvpn.top
+  port: 2053
   type: trojan
   password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
-  sni: tt0.tjvpn.top
+  sni: tt3.tjvpn.top
   skip-cert-verify: true
-- name: 🇨🇱CL-129.151.117.8-13
-  server: tt2.tjvpn.top
-  port: 520
+- name: 🇯🇵JP-35.77.16.106-19
+  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: tt3.tjvpn.top
+- name: 🇮🇳IN-45.79.120.199-20
+  server: tt5.tjvpn.top
+  port: 8443
   type: trojan
   password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
-  sni: tt2.tjvpn.top
+  sni: tt5.tjvpn.top
   skip-cert-verify: true
-- name: 🇯🇵JP-172.105.195.114-14
-  server: tt6.tjvpn.top
-  port: 443
-  type: trojan
-  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
-  sni: tt6.tjvpn.top
-  skip-cert-verify: true
-- name: 🇹🇷TR-141.98.118.109-15
-  server: turkey.jcnf.app
+- name: 🇺🇸US-192.9.226.158-21
+  server: usa.jcnf.app
   port: 443
   type: vmess
   uuid: c753e8a8-e180-4e76-a486-c917273d718b
@@ -149,8 +255,15 @@ proxies:
   ws-opts:
     path: /zcjd
     headers:
-      Host: turkey.jcnf.app
-- name: 🇻🇳VN-103.3.244.135-16
+      Host: usa.jcnf.app
+- name: 🇺🇸US-137.184.226.150-22
+  server: s1.hass.win
+  port: 12340
+  type: trojan
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  sni: static.dingtalk.com
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.3.244.135-23
   server: hcm-1.4g.mkvn.net
   port: 80
   type: vmess
@@ -164,28 +277,42 @@ proxies:
     path: /4g.mkvn.net
     headers:
       Host: dl.kgvn.garenanow.com
-- name: 🇮🇳IN-45.79.120.199-17
-  server: tt5.tjvpn.top
-  port: 8443
+- name: 🇺🇸US-194.5.154.17-24
+  server: los.ydnode.us
+  port: 90
   type: trojan
-  password: 4d3fbb6a-210d-4fb1-80e3-987f85636594
-  sni: tt5.tjvpn.top
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: los.ydnode.us
   skip-cert-verify: true
-- name: 🇮🇳IN-152.67.12.46-18
-  server: india.ycsfree.xyz
-  port: 443
+- name: 🇩🇪DE-138.68.97.165-25
+  server: s2.hass.win
+  port: 12340
+  type: trojan
+  password: dfbf0d67-f03d-4184-a224-c2d64a571f99
+  sni: static.dingtalk.com
+  skip-cert-verify: true
+- name: 🇫🇷FR-193.70.33.128-26
+  server: 193.70.33.128
+  port: 17772
   type: vmess
-  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  uuid: bcaf6b8f-0acb-4ffd-86ad-8f13e7dfe436
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
-  tls: true
+  tls: false
   ws-opts:
-    path: /zcjd
+    path: /cctv13/hd.m3u8
     headers:
-      Host: india.ycsfree.xyz
-- name: 🇩🇪DE-5.183.179.104-19
+      Host: 193.70.33.128
+- name: 🇷🇺RU-192.109.98.206-27
+  server: ru1.nodegz.top
+  port: 1200
+  type: trojan
+  password: 91a3db80-baf5-3f35-8c0e-b6483aefa1fd
+  sni: ru1.nodegz.top
+  skip-cert-verify: true
+- name: 🇩🇪DE-5.183.179.104-28
   server: o1.chaoxn.top
   port: 80
   type: vmess
@@ -199,14 +326,21 @@ proxies:
     path: /
     headers:
       Host: o1.chaoxn.top
-- name: 🇷🇺RU-192.109.98.206-20
-  server: ru1.nodegz.top
-  port: 1200
-  type: trojan
-  password: 91a3db80-baf5-3f35-8c0e-b6483aefa1fd
-  sni: ru1.nodegz.top
-  skip-cert-verify: true
-- name: 🇸🇬SG-209.97.160.164-21
+- name: 🇹🇷TR-141.98.118.109-29
+  server: turkey.jcnf.app
+  port: 443
+  type: vmess
+  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /zcjd
+    headers:
+      Host: turkey.jcnf.app
+- name: 🇸🇬SG-209.97.160.164-30
   server: k1.chaoxn.top
   port: 80
   type: vmess
@@ -220,8 +354,15 @@ proxies:
     path: /
     headers:
       Host: k1.chaoxn.top
-- name: 🇱🇺LU-104.244.79.7-22
-  server: lsb.ycsfree.xyz
+- name: 🇭🇰HK-218.188.148.30-31
+  server: freehk.ydnode.us
+  port: 80
+  type: trojan
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: freehk.ydnode.us
+  skip-cert-verify: true
+- name: 🇮🇳IN-152.67.12.46-32
+  server: india.ycsfree.xyz
   port: 443
   type: vmess
   uuid: c753e8a8-e180-4e76-a486-c917273d718b
@@ -233,8 +374,8 @@ proxies:
   ws-opts:
     path: /zcjd
     headers:
-      Host: lsb.ycsfree.xyz
-- name: 🇯🇵JP-43.153.173.29-23
+      Host: india.ycsfree.xyz
+- name: 🇯🇵JP-43.153.173.29-33
   server: jp1.chaoxn.top
   port: 80
   type: vmess
@@ -248,8 +389,8 @@ proxies:
     path: /
     headers:
       Host: jp1.chaoxn.top
-- name: 🇸🇬SG-129.150.33.76-24
-  server: sgp.ycsfree.xyz
+- name: 🇱🇺LU-104.244.79.7-34
+  server: lsb.ycsfree.xyz
   port: 443
   type: vmess
   uuid: c753e8a8-e180-4e76-a486-c917273d718b
@@ -261,21 +402,7 @@ proxies:
   ws-opts:
     path: /zcjd
     headers:
-      Host: sgp.ycsfree.xyz
-- name: 🇺🇸US-152.67.252.170-25
-  server: jgwus.jgwaad.tk
-  port: 443
-  type: vmess
-  uuid: bcaf6b8f-0acb-4ffd-86ad-8f13e7dfe436
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /cctv13/hd.m3u8
-    headers:
-      Host: jgwus.jgwaad.tk
+      Host: lsb.ycsfree.xyz
 proxy-groups:
 - name: 节点选择
   type: select
@@ -291,73 +418,91 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - 🇭🇰HK-218.188.148.30-04
-  - 🇭🇰HK-20.2.80.51-10
+  - 🇭🇰HK-20.2.80.51-14
+  - 🇭🇰HK-218.188.148.30-31
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-52.194.184.142-05
-  - 🇯🇵JP-3.113.12.244-07
-  - 🇯🇵JP-172.105.195.114-14
-  - 🇯🇵JP-43.153.173.29-23
+  - 🇯🇵JP-54.178.41.254-07
+  - 🇯🇵JP-3.113.29.139-08
+  - 🇯🇵JP-172.105.195.114-10
+  - 🇯🇵JP-54.199.217.80-11
+  - 🇯🇵JP-18.182.23.24-12
+  - 🇯🇵JP-18.176.182.86-17
+  - 🇯🇵JP-35.77.16.106-19
+  - 🇯🇵JP-43.153.173.29-33
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-54.169.103.9-11
-  - 🇸🇬SG-209.97.160.164-21
-  - 🇸🇬SG-129.150.33.76-24
+  - 🇸🇬SG-54.169.103.9-16
+  - 🇸🇬SG-209.97.160.164-30
 - name: 其他节点
   type: select
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-137.184.226.150-01
-  - 🇩🇪DE-138.68.97.165-02
-  - 🇺🇸US-18.144.83.110-03
-  - 🇺🇸US-192.9.226.158-06
-  - 🇨🇦CA-172.105.26.180-08
-  - 🇩🇪DE-172.104.238.6-09
-  - 🇬🇧GB-132.145.63.178-12
+  - 🇨🇦CA-172.105.26.180-00
+  - 🇺🇸US-34.223.105.106-01
+  - 🇺🇸US-54.215.173.102-02
+  - 🇺🇸US-54.219.108.39-03
+  - 🇺🇸US-54.219.58.83-04
+  - 🇺🇸US-54.176.100.254-05
+  - 🇩🇪DE-172.104.238.6-06
+  - 🇬🇧GB-132.145.63.178-09
   - 🇨🇱CL-129.151.117.8-13
-  - 🇹🇷TR-141.98.118.109-15
-  - 🇻🇳VN-103.3.244.135-16
-  - 🇮🇳IN-45.79.120.199-17
-  - 🇮🇳IN-152.67.12.46-18
-  - 🇩🇪DE-5.183.179.104-19
-  - 🇷🇺RU-192.109.98.206-20
-  - 🇱🇺LU-104.244.79.7-22
-  - 🇺🇸US-152.67.252.170-25
+  - 🇺🇸US-18.144.83.110-15
+  - 🇰🇷KR-152.69.228.14-18
+  - 🇮🇳IN-45.79.120.199-20
+  - 🇺🇸US-192.9.226.158-21
+  - 🇺🇸US-137.184.226.150-22
+  - 🇻🇳VN-103.3.244.135-23
+  - 🇺🇸US-194.5.154.17-24
+  - 🇩🇪DE-138.68.97.165-25
+  - 🇫🇷FR-193.70.33.128-26
+  - 🇷🇺RU-192.109.98.206-27
+  - 🇩🇪DE-5.183.179.104-28
+  - 🇹🇷TR-141.98.118.109-29
+  - 🇮🇳IN-152.67.12.46-32
+  - 🇱🇺LU-104.244.79.7-34
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-137.184.226.150-01
-  - 🇩🇪DE-138.68.97.165-02
-  - 🇺🇸US-18.144.83.110-03
-  - 🇭🇰HK-218.188.148.30-04
-  - 🇯🇵JP-52.194.184.142-05
-  - 🇺🇸US-192.9.226.158-06
-  - 🇯🇵JP-3.113.12.244-07
-  - 🇨🇦CA-172.105.26.180-08
-  - 🇩🇪DE-172.104.238.6-09
-  - 🇭🇰HK-20.2.80.51-10
-  - 🇸🇬SG-54.169.103.9-11
-  - 🇬🇧GB-132.145.63.178-12
+  - 🇨🇦CA-172.105.26.180-00
+  - 🇺🇸US-34.223.105.106-01
+  - 🇺🇸US-54.215.173.102-02
+  - 🇺🇸US-54.219.108.39-03
+  - 🇺🇸US-54.219.58.83-04
+  - 🇺🇸US-54.176.100.254-05
+  - 🇩🇪DE-172.104.238.6-06
+  - 🇯🇵JP-54.178.41.254-07
+  - 🇯🇵JP-3.113.29.139-08
+  - 🇬🇧GB-132.145.63.178-09
+  - 🇯🇵JP-172.105.195.114-10
+  - 🇯🇵JP-54.199.217.80-11
+  - 🇯🇵JP-18.182.23.24-12
   - 🇨🇱CL-129.151.117.8-13
-  - 🇯🇵JP-172.105.195.114-14
-  - 🇹🇷TR-141.98.118.109-15
-  - 🇻🇳VN-103.3.244.135-16
-  - 🇮🇳IN-45.79.120.199-17
-  - 🇮🇳IN-152.67.12.46-18
-  - 🇩🇪DE-5.183.179.104-19
-  - 🇷🇺RU-192.109.98.206-20
-  - 🇸🇬SG-209.97.160.164-21
-  - 🇱🇺LU-104.244.79.7-22
-  - 🇯🇵JP-43.153.173.29-23
-  - 🇸🇬SG-129.150.33.76-24
-  - 🇺🇸US-152.67.252.170-25
+  - 🇭🇰HK-20.2.80.51-14
+  - 🇺🇸US-18.144.83.110-15
+  - 🇸🇬SG-54.169.103.9-16
+  - 🇯🇵JP-18.176.182.86-17
+  - 🇰🇷KR-152.69.228.14-18
+  - 🇯🇵JP-35.77.16.106-19
+  - 🇮🇳IN-45.79.120.199-20
+  - 🇺🇸US-192.9.226.158-21
+  - 🇺🇸US-137.184.226.150-22
+  - 🇻🇳VN-103.3.244.135-23
+  - 🇺🇸US-194.5.154.17-24
+  - 🇩🇪DE-138.68.97.165-25
+  - 🇫🇷FR-193.70.33.128-26
+  - 🇷🇺RU-192.109.98.206-27
+  - 🇩🇪DE-5.183.179.104-28
+  - 🇹🇷TR-141.98.118.109-29
+  - 🇸🇬SG-209.97.160.164-30
+  - 🇭🇰HK-218.188.148.30-31
+  - 🇮🇳IN-152.67.12.46-32
+  - 🇯🇵JP-43.153.173.29-33
+  - 🇱🇺LU-104.244.79.7-34
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -365,64 +510,82 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-137.184.226.150-01
-  - 🇩🇪DE-138.68.97.165-02
-  - 🇺🇸US-18.144.83.110-03
-  - 🇭🇰HK-218.188.148.30-04
-  - 🇯🇵JP-52.194.184.142-05
-  - 🇺🇸US-192.9.226.158-06
-  - 🇯🇵JP-3.113.12.244-07
-  - 🇨🇦CA-172.105.26.180-08
-  - 🇩🇪DE-172.104.238.6-09
-  - 🇭🇰HK-20.2.80.51-10
-  - 🇸🇬SG-54.169.103.9-11
-  - 🇬🇧GB-132.145.63.178-12
+  - 🇨🇦CA-172.105.26.180-00
+  - 🇺🇸US-34.223.105.106-01
+  - 🇺🇸US-54.215.173.102-02
+  - 🇺🇸US-54.219.108.39-03
+  - 🇺🇸US-54.219.58.83-04
+  - 🇺🇸US-54.176.100.254-05
+  - 🇩🇪DE-172.104.238.6-06
+  - 🇯🇵JP-54.178.41.254-07
+  - 🇯🇵JP-3.113.29.139-08
+  - 🇬🇧GB-132.145.63.178-09
+  - 🇯🇵JP-172.105.195.114-10
+  - 🇯🇵JP-54.199.217.80-11
+  - 🇯🇵JP-18.182.23.24-12
   - 🇨🇱CL-129.151.117.8-13
-  - 🇯🇵JP-172.105.195.114-14
-  - 🇹🇷TR-141.98.118.109-15
-  - 🇻🇳VN-103.3.244.135-16
-  - 🇮🇳IN-45.79.120.199-17
-  - 🇮🇳IN-152.67.12.46-18
-  - 🇩🇪DE-5.183.179.104-19
-  - 🇷🇺RU-192.109.98.206-20
-  - 🇸🇬SG-209.97.160.164-21
-  - 🇱🇺LU-104.244.79.7-22
-  - 🇯🇵JP-43.153.173.29-23
-  - 🇸🇬SG-129.150.33.76-24
-  - 🇺🇸US-152.67.252.170-25
+  - 🇭🇰HK-20.2.80.51-14
+  - 🇺🇸US-18.144.83.110-15
+  - 🇸🇬SG-54.169.103.9-16
+  - 🇯🇵JP-18.176.182.86-17
+  - 🇰🇷KR-152.69.228.14-18
+  - 🇯🇵JP-35.77.16.106-19
+  - 🇮🇳IN-45.79.120.199-20
+  - 🇺🇸US-192.9.226.158-21
+  - 🇺🇸US-137.184.226.150-22
+  - 🇻🇳VN-103.3.244.135-23
+  - 🇺🇸US-194.5.154.17-24
+  - 🇩🇪DE-138.68.97.165-25
+  - 🇫🇷FR-193.70.33.128-26
+  - 🇷🇺RU-192.109.98.206-27
+  - 🇩🇪DE-5.183.179.104-28
+  - 🇹🇷TR-141.98.118.109-29
+  - 🇸🇬SG-209.97.160.164-30
+  - 🇭🇰HK-218.188.148.30-31
+  - 🇮🇳IN-152.67.12.46-32
+  - 🇯🇵JP-43.153.173.29-33
+  - 🇱🇺LU-104.244.79.7-34
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-137.184.226.150-01
-  - 🇩🇪DE-138.68.97.165-02
-  - 🇺🇸US-18.144.83.110-03
-  - 🇭🇰HK-218.188.148.30-04
-  - 🇯🇵JP-52.194.184.142-05
-  - 🇺🇸US-192.9.226.158-06
-  - 🇯🇵JP-3.113.12.244-07
-  - 🇨🇦CA-172.105.26.180-08
-  - 🇩🇪DE-172.104.238.6-09
-  - 🇭🇰HK-20.2.80.51-10
-  - 🇸🇬SG-54.169.103.9-11
-  - 🇬🇧GB-132.145.63.178-12
+  - 🇨🇦CA-172.105.26.180-00
+  - 🇺🇸US-34.223.105.106-01
+  - 🇺🇸US-54.215.173.102-02
+  - 🇺🇸US-54.219.108.39-03
+  - 🇺🇸US-54.219.58.83-04
+  - 🇺🇸US-54.176.100.254-05
+  - 🇩🇪DE-172.104.238.6-06
+  - 🇯🇵JP-54.178.41.254-07
+  - 🇯🇵JP-3.113.29.139-08
+  - 🇬🇧GB-132.145.63.178-09
+  - 🇯🇵JP-172.105.195.114-10
+  - 🇯🇵JP-54.199.217.80-11
+  - 🇯🇵JP-18.182.23.24-12
   - 🇨🇱CL-129.151.117.8-13
-  - 🇯🇵JP-172.105.195.114-14
-  - 🇹🇷TR-141.98.118.109-15
-  - 🇻🇳VN-103.3.244.135-16
-  - 🇮🇳IN-45.79.120.199-17
-  - 🇮🇳IN-152.67.12.46-18
-  - 🇩🇪DE-5.183.179.104-19
-  - 🇷🇺RU-192.109.98.206-20
-  - 🇸🇬SG-209.97.160.164-21
-  - 🇱🇺LU-104.244.79.7-22
-  - 🇯🇵JP-43.153.173.29-23
-  - 🇸🇬SG-129.150.33.76-24
-  - 🇺🇸US-152.67.252.170-25
+  - 🇭🇰HK-20.2.80.51-14
+  - 🇺🇸US-18.144.83.110-15
+  - 🇸🇬SG-54.169.103.9-16
+  - 🇯🇵JP-18.176.182.86-17
+  - 🇰🇷KR-152.69.228.14-18
+  - 🇯🇵JP-35.77.16.106-19
+  - 🇮🇳IN-45.79.120.199-20
+  - 🇺🇸US-192.9.226.158-21
+  - 🇺🇸US-137.184.226.150-22
+  - 🇻🇳VN-103.3.244.135-23
+  - 🇺🇸US-194.5.154.17-24
+  - 🇩🇪DE-138.68.97.165-25
+  - 🇫🇷FR-193.70.33.128-26
+  - 🇷🇺RU-192.109.98.206-27
+  - 🇩🇪DE-5.183.179.104-28
+  - 🇹🇷TR-141.98.118.109-29
+  - 🇸🇬SG-209.97.160.164-30
+  - 🇭🇰HK-218.188.148.30-31
+  - 🇮🇳IN-152.67.12.46-32
+  - 🇯🇵JP-43.153.173.29-33
+  - 🇱🇺LU-104.244.79.7-34
 - name: 谷歌服务
   type: select
   proxies:
