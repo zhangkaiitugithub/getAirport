@@ -116,4 +116,6 @@ def get_conf():     # 根据config.yaml里面的地址，注册新账号获取�
             pass  
 
 if __name__=='__main__':
+    print('Go go go,bigen！')
     get_conf()
+    print('Go go go,over！')
