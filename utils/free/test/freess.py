@@ -5,7 +5,7 @@ import requests,random,string
 # config.yaml配置文件地址
 config_file_path = './utils/free/test/config.yaml'
 out_list_file_path = './sub/free/test/sublist_freeclash'
-out_freesub_path = "./sub/free/test/sub"
+out_freesub_path = "./sub/free/test/sub/"
 
 '''
 "name":"www.kuaicloud.xyz",
