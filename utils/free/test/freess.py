@@ -107,7 +107,7 @@ def get_conf():     # 根据config.yaml里面的地址，注册新账号获取�
     with open(config_file_path,encoding="UTF-8") as f:  # 获取config地址内容
         data = yaml.load(f, Loader=yaml.FullLoader)
     url_list = data['SSpanel']       # 将SSpanel格式网站地址取出到url_list
-    print('url_list = '+url_list)
+    print('url_list = '+str(url_list))
     for url in url_list:                #读取url_list的地址
         sub = tempsite(url)             # 定义一个sub名字的tempsite()类，默认初始化类_init_(self，url，proxy = None)
         try:
