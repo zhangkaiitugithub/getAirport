@@ -5,139 +5,21 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇺🇸US-194.5.154.17-00
-  server: los.ydnode.us
-  port: 443
-  type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: los.ydnode.us
-  skip-cert-verify: true
-- name: 🇺🇸US-18.144.83.110-01
-  server: agroup.node5.t.nodelist-gfwairport.download
-  port: 50001
-  type: trojan
-  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
-  skip-cert-verify: true
-- name: 🇭🇰HK-20.2.80.51-02
-  server: hk-1.4g.mkvn.net
-  port: 80
-  type: vmess
-  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /4g.mkvn.net
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇺🇸US-137.184.226.150-03
+- name: 🇺🇸US-137.184.226.150-00
   server: s1.hass.win
   port: 12340
   type: trojan
   password: dfbf0d67-f03d-4184-a224-c2d64a571f99
   sni: static.dingtalk.com
   skip-cert-verify: true
-- name: 🇸🇬SG-54.169.103.9-04
-  server: sing-3.4g.mkvn.net
-  port: 80
-  type: vmess
-  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /4g.mkvn.net
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇩🇪DE-138.68.97.165-05
+- name: 🇩🇪DE-138.68.97.165-01
   server: s2.hass.win
   port: 12340
   type: trojan
   password: dfbf0d67-f03d-4184-a224-c2d64a571f99
   sni: static.dingtalk.com
   skip-cert-verify: true
-- name: 🇺🇸US-34.223.105.106-06
-  server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
-  port: 10392
-  type: vmess
-  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: static.dingtalk.com
-- name: 🇯🇵JP-54.178.41.254-07
-  server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
-  port: 443
-  type: vmess
-  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: static.dingtalk.com
-- name: 🇯🇵JP-54.199.217.80-08
-  server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: static.dingtalk.com
-- name: 🇻🇳VN-103.3.244.135-09
-  server: hcm-1.4g.mkvn.net
-  port: 80
-  type: vmess
-  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /4g.mkvn.net
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇯🇵JP-18.176.182.86-10
-  server: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /4g.mkvn.net
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇭🇰HK-218.188.148.30-11
-  server: freehk.ydnode.us
-  port: 80
-  type: trojan
-  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
-  sni: freehk.ydnode.us
-  skip-cert-verify: true
-- name: 🇱🇺LU-104.244.79.7-12
+- name: 🇱🇺LU-104.244.79.7-02
   server: lsb.ycsfree.xyz
   port: 443
   type: vmess
@@ -151,21 +33,56 @@ proxies:
     path: /zcjd
     headers:
       Host: lsb.ycsfree.xyz
-- name: 🇹🇷TR-141.98.118.109-13
-  server: turkey.jcnf.app
-  port: 443
+- name: 🇫🇷FR-193.70.33.128-03
+  server: 193.70.33.128
+  port: 17772
   type: vmess
-  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
-  tls: true
+  tls: false
   ws-opts:
-    path: /zcjd
+    path: /cctv13/hd.m3u8
     headers:
-      Host: turkey.jcnf.app
-- name: 🇸🇬SG-129.150.33.76-14
+      Host: 193.70.33.128
+- name: 🇺🇸US-45.88.148.234-04
+  server: 45.88.148.234
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇺🇸US-45.82.253.234-05
+  server: 45.82.253.234
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇺🇸US-212.90.123.130-06
+  server: 212.90.123.130
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇭🇰HK-20.2.80.51-07
+  server: hk-1.4g.mkvn.net
+  port: 80
+  type: vmess
+  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /4g.mkvn.net
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: 🇸🇬SG-129.150.33.76-08
   server: sgp.ycsfree.xyz
   port: 443
   type: vmess
@@ -179,25 +96,240 @@ proxies:
     path: /zcjd
     headers:
       Host: sgp.ycsfree.xyz
-- name: 🇮🇳IN-152.67.12.46-15
-  server: india.ycsfree.xyz
-  port: 443
+- name: 🇸🇬SG-54.169.103.9-09
+  server: sing-3.4g.mkvn.net
+  port: 80
   type: vmess
-  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
-  tls: true
+  tls: false
   ws-opts:
-    path: /zcjd
+    path: /4g.mkvn.net
     headers:
-      Host: india.ycsfree.xyz
-- name: 🇺🇸US-152.67.252.170-16
+      Host: dl.kgvn.garenanow.com
+- name: 🇯🇵JP-202.8.9.67-10
+  server: 202.8.9.67
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇯🇵JP-202.8.9.27-11
+  server: 202.8.9.27
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.173.255.21-12
+  server: 103.173.255.21
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.173.255.228-13
+  server: 103.173.255.228
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.195.236.24-14
+  server: 103.195.236.24
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇩🇪DE-89.163.220.99-15
+  server: 89.163.220.99
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.3.244.135-16
+  server: hcm-1.4g.mkvn.net
+  port: 80
+  type: vmess
+  uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /4g.mkvn.net
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: 🇳🇱NL-80.78.132.177-17
+  server: 80.78.132.177
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.173.255.234-18
+  server: 103.173.255.234
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇺🇸US-194.5.154.17-19
+  server: los.ydnode.us
+  port: 1001
+  type: trojan
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: los.ydnode.us
+  skip-cert-verify: true
+- name: 🇻🇳VN-103.173.255.127-20
+  server: 103.173.255.127
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇭🇰HK-112.120.41.144-21
+  server: zf2.windowsupdate1.com
+  port: 30010
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇹🇼TW-36.227.209.61-22
+  server: download1tw.windowsupdate1.com
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇸🇬SG-20.24.44.110-23
+  server: zf1.windowsupdate1.com
+  port: 30010
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇹🇼TW-114.37.208.58-24
+  server: download2tw.windowsupdate1.com
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇫🇷FR-163.172.87.145-25
+  server: 163.172.87.145
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇺🇸US-18.144.83.110-26
+  server: agroup.node5.t.nodelist-gfwairport.download
+  port: 50001
+  type: trojan
+  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
+  skip-cert-verify: true
+- name: 🇭🇰HK-112.120.41.144-27
+  server: zf2.windowsupdate1.com
+  port: 30060
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇭🇰HK-112.120.41.144-28
+  server: download1hkt.windowsupdate1.com
+  port: 28443
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇯🇵JP-3.113.12.244-29
+  server: agroup.node1.t.nodelist-gfwairport.download
+  port: 50001
+  type: trojan
+  password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac
+  skip-cert-verify: true
+- name: 🇭🇰HK-112.120.41.144-30
+  server: zf2.windowsupdate1.com
+  port: 30040
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇸🇬SG-20.24.44.110-31
+  server: zf1.windowsupdate1.com
+  port: 30060
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇸🇬SG-20.24.44.110-32
+  server: zf1.windowsupdate1.com
+  port: 30040
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇸🇬SG-20.24.44.110-33
+  server: zf1.windowsupdate1.com
+  port: 30050
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇭🇰HK-218.188.148.30-34
+  server: freehk.ydnode.us
+  port: 80
+  type: trojan
+  password: d6ed263c-3f14-44db-bfee-cfcc26b234d1
+  sni: freehk.ydnode.us
+  skip-cert-verify: true
+- name: 🇭🇰HK-112.120.41.144-35
+  server: zf2.windowsupdate1.com
+  port: 30050
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇨🇳CN-36.138.221.76-36
+  server: 36.138.221.76
+  port: 30060
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇨🇳CN-36.138.221.76-37
+  server: 36.138.221.76
+  port: 30010
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇨🇳CN-36.138.221.76-38
+  server: 36.138.221.76
+  port: 30070
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇨🇳CN-36.138.221.76-39
+  server: 36.138.221.76
+  port: 30050
+  type: trojan
+  password: 71e55461-1f57-4a1e-a6a7-f3fccb908544
+  sni: glc.hruqoaw.cn
+  skip-cert-verify: true
+- name: 🇺🇸US-152.67.252.170-40
   server: jgwus.jgwaad.tk
   port: 443
   type: vmess
-  uuid: bcaf6b8f-0acb-4ffd-86ad-8f13e7dfe436
+  uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
@@ -207,21 +339,7 @@ proxies:
     path: /cctv13/hd.m3u8
     headers:
       Host: jgwus.jgwaad.tk
-- name: 🇯🇵JP-3.113.29.139-17
-  server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
-  port: 80
-  type: vmess
-  uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /cctv13/hd.m3u8
-    headers:
-      Host: jgwus.jgwaad.tk
-- name: 🇺🇸US-192.9.226.158-18
+- name: 🇺🇸US-192.9.226.158-41
   server: usa.jcnf.app
   port: 443
   type: vmess
@@ -250,59 +368,105 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - 🇭🇰HK-20.2.80.51-02
-  - 🇭🇰HK-218.188.148.30-11
+  - 🇭🇰HK-20.2.80.51-07
+  - 🇭🇰HK-112.120.41.144-21
+  - 🇭🇰HK-112.120.41.144-27
+  - 🇭🇰HK-112.120.41.144-28
+  - 🇭🇰HK-112.120.41.144-30
+  - 🇭🇰HK-218.188.148.30-34
+  - 🇭🇰HK-112.120.41.144-35
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-54.178.41.254-07
-  - 🇯🇵JP-54.199.217.80-08
-  - 🇯🇵JP-18.176.182.86-10
-  - 🇯🇵JP-3.113.29.139-17
+  - 🇯🇵JP-202.8.9.67-10
+  - 🇯🇵JP-202.8.9.27-11
+  - 🇯🇵JP-3.113.12.244-29
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-54.169.103.9-04
-  - 🇸🇬SG-129.150.33.76-14
+  - 🇸🇬SG-129.150.33.76-08
+  - 🇸🇬SG-54.169.103.9-09
+  - 🇸🇬SG-20.24.44.110-23
+  - 🇸🇬SG-20.24.44.110-31
+  - 🇸🇬SG-20.24.44.110-32
+  - 🇸🇬SG-20.24.44.110-33
 - name: 其他节点
   type: select
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-18.144.83.110-01
-  - 🇺🇸US-137.184.226.150-03
-  - 🇩🇪DE-138.68.97.165-05
-  - 🇺🇸US-34.223.105.106-06
-  - 🇻🇳VN-103.3.244.135-09
-  - 🇱🇺LU-104.244.79.7-12
-  - 🇹🇷TR-141.98.118.109-13
-  - 🇮🇳IN-152.67.12.46-15
-  - 🇺🇸US-152.67.252.170-16
-  - 🇺🇸US-192.9.226.158-18
+  - 🇺🇸US-137.184.226.150-00
+  - 🇩🇪DE-138.68.97.165-01
+  - 🇱🇺LU-104.244.79.7-02
+  - 🇫🇷FR-193.70.33.128-03
+  - 🇺🇸US-45.88.148.234-04
+  - 🇺🇸US-45.82.253.234-05
+  - 🇺🇸US-212.90.123.130-06
+  - 🇻🇳VN-103.173.255.21-12
+  - 🇻🇳VN-103.173.255.228-13
+  - 🇻🇳VN-103.195.236.24-14
+  - 🇩🇪DE-89.163.220.99-15
+  - 🇻🇳VN-103.3.244.135-16
+  - 🇳🇱NL-80.78.132.177-17
+  - 🇻🇳VN-103.173.255.234-18
+  - 🇺🇸US-194.5.154.17-19
+  - 🇻🇳VN-103.173.255.127-20
+  - 🇹🇼TW-36.227.209.61-22
+  - 🇹🇼TW-114.37.208.58-24
+  - 🇫🇷FR-163.172.87.145-25
+  - 🇺🇸US-18.144.83.110-26
+  - 🇨🇳CN-36.138.221.76-36
+  - 🇨🇳CN-36.138.221.76-37
+  - 🇨🇳CN-36.138.221.76-38
+  - 🇨🇳CN-36.138.221.76-39
+  - 🇺🇸US-152.67.252.170-40
+  - 🇺🇸US-192.9.226.158-41
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-18.144.83.110-01
-  - 🇭🇰HK-20.2.80.51-02
-  - 🇺🇸US-137.184.226.150-03
-  - 🇸🇬SG-54.169.103.9-04
-  - 🇩🇪DE-138.68.97.165-05
-  - 🇺🇸US-34.223.105.106-06
-  - 🇯🇵JP-54.178.41.254-07
-  - 🇯🇵JP-54.199.217.80-08
-  - 🇻🇳VN-103.3.244.135-09
-  - 🇯🇵JP-18.176.182.86-10
-  - 🇭🇰HK-218.188.148.30-11
-  - 🇱🇺LU-104.244.79.7-12
-  - 🇹🇷TR-141.98.118.109-13
-  - 🇸🇬SG-129.150.33.76-14
-  - 🇮🇳IN-152.67.12.46-15
-  - 🇺🇸US-152.67.252.170-16
-  - 🇯🇵JP-3.113.29.139-17
-  - 🇺🇸US-192.9.226.158-18
+  - 🇺🇸US-137.184.226.150-00
+  - 🇩🇪DE-138.68.97.165-01
+  - 🇱🇺LU-104.244.79.7-02
+  - 🇫🇷FR-193.70.33.128-03
+  - 🇺🇸US-45.88.148.234-04
+  - 🇺🇸US-45.82.253.234-05
+  - 🇺🇸US-212.90.123.130-06
+  - 🇭🇰HK-20.2.80.51-07
+  - 🇸🇬SG-129.150.33.76-08
+  - 🇸🇬SG-54.169.103.9-09
+  - 🇯🇵JP-202.8.9.67-10
+  - 🇯🇵JP-202.8.9.27-11
+  - 🇻🇳VN-103.173.255.21-12
+  - 🇻🇳VN-103.173.255.228-13
+  - 🇻🇳VN-103.195.236.24-14
+  - 🇩🇪DE-89.163.220.99-15
+  - 🇻🇳VN-103.3.244.135-16
+  - 🇳🇱NL-80.78.132.177-17
+  - 🇻🇳VN-103.173.255.234-18
+  - 🇺🇸US-194.5.154.17-19
+  - 🇻🇳VN-103.173.255.127-20
+  - 🇭🇰HK-112.120.41.144-21
+  - 🇹🇼TW-36.227.209.61-22
+  - 🇸🇬SG-20.24.44.110-23
+  - 🇹🇼TW-114.37.208.58-24
+  - 🇫🇷FR-163.172.87.145-25
+  - 🇺🇸US-18.144.83.110-26
+  - 🇭🇰HK-112.120.41.144-27
+  - 🇭🇰HK-112.120.41.144-28
+  - 🇯🇵JP-3.113.12.244-29
+  - 🇭🇰HK-112.120.41.144-30
+  - 🇸🇬SG-20.24.44.110-31
+  - 🇸🇬SG-20.24.44.110-32
+  - 🇸🇬SG-20.24.44.110-33
+  - 🇭🇰HK-218.188.148.30-34
+  - 🇭🇰HK-112.120.41.144-35
+  - 🇨🇳CN-36.138.221.76-36
+  - 🇨🇳CN-36.138.221.76-37
+  - 🇨🇳CN-36.138.221.76-38
+  - 🇨🇳CN-36.138.221.76-39
+  - 🇺🇸US-152.67.252.170-40
+  - 🇺🇸US-192.9.226.158-41
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -310,50 +474,96 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-18.144.83.110-01
-  - 🇭🇰HK-20.2.80.51-02
-  - 🇺🇸US-137.184.226.150-03
-  - 🇸🇬SG-54.169.103.9-04
-  - 🇩🇪DE-138.68.97.165-05
-  - 🇺🇸US-34.223.105.106-06
-  - 🇯🇵JP-54.178.41.254-07
-  - 🇯🇵JP-54.199.217.80-08
-  - 🇻🇳VN-103.3.244.135-09
-  - 🇯🇵JP-18.176.182.86-10
-  - 🇭🇰HK-218.188.148.30-11
-  - 🇱🇺LU-104.244.79.7-12
-  - 🇹🇷TR-141.98.118.109-13
-  - 🇸🇬SG-129.150.33.76-14
-  - 🇮🇳IN-152.67.12.46-15
-  - 🇺🇸US-152.67.252.170-16
-  - 🇯🇵JP-3.113.29.139-17
-  - 🇺🇸US-192.9.226.158-18
+  - 🇺🇸US-137.184.226.150-00
+  - 🇩🇪DE-138.68.97.165-01
+  - 🇱🇺LU-104.244.79.7-02
+  - 🇫🇷FR-193.70.33.128-03
+  - 🇺🇸US-45.88.148.234-04
+  - 🇺🇸US-45.82.253.234-05
+  - 🇺🇸US-212.90.123.130-06
+  - 🇭🇰HK-20.2.80.51-07
+  - 🇸🇬SG-129.150.33.76-08
+  - 🇸🇬SG-54.169.103.9-09
+  - 🇯🇵JP-202.8.9.67-10
+  - 🇯🇵JP-202.8.9.27-11
+  - 🇻🇳VN-103.173.255.21-12
+  - 🇻🇳VN-103.173.255.228-13
+  - 🇻🇳VN-103.195.236.24-14
+  - 🇩🇪DE-89.163.220.99-15
+  - 🇻🇳VN-103.3.244.135-16
+  - 🇳🇱NL-80.78.132.177-17
+  - 🇻🇳VN-103.173.255.234-18
+  - 🇺🇸US-194.5.154.17-19
+  - 🇻🇳VN-103.173.255.127-20
+  - 🇭🇰HK-112.120.41.144-21
+  - 🇹🇼TW-36.227.209.61-22
+  - 🇸🇬SG-20.24.44.110-23
+  - 🇹🇼TW-114.37.208.58-24
+  - 🇫🇷FR-163.172.87.145-25
+  - 🇺🇸US-18.144.83.110-26
+  - 🇭🇰HK-112.120.41.144-27
+  - 🇭🇰HK-112.120.41.144-28
+  - 🇯🇵JP-3.113.12.244-29
+  - 🇭🇰HK-112.120.41.144-30
+  - 🇸🇬SG-20.24.44.110-31
+  - 🇸🇬SG-20.24.44.110-32
+  - 🇸🇬SG-20.24.44.110-33
+  - 🇭🇰HK-218.188.148.30-34
+  - 🇭🇰HK-112.120.41.144-35
+  - 🇨🇳CN-36.138.221.76-36
+  - 🇨🇳CN-36.138.221.76-37
+  - 🇨🇳CN-36.138.221.76-38
+  - 🇨🇳CN-36.138.221.76-39
+  - 🇺🇸US-152.67.252.170-40
+  - 🇺🇸US-192.9.226.158-41
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇺🇸US-194.5.154.17-00
-  - 🇺🇸US-18.144.83.110-01
-  - 🇭🇰HK-20.2.80.51-02
-  - 🇺🇸US-137.184.226.150-03
-  - 🇸🇬SG-54.169.103.9-04
-  - 🇩🇪DE-138.68.97.165-05
-  - 🇺🇸US-34.223.105.106-06
-  - 🇯🇵JP-54.178.41.254-07
-  - 🇯🇵JP-54.199.217.80-08
-  - 🇻🇳VN-103.3.244.135-09
-  - 🇯🇵JP-18.176.182.86-10
-  - 🇭🇰HK-218.188.148.30-11
-  - 🇱🇺LU-104.244.79.7-12
-  - 🇹🇷TR-141.98.118.109-13
-  - 🇸🇬SG-129.150.33.76-14
-  - 🇮🇳IN-152.67.12.46-15
-  - 🇺🇸US-152.67.252.170-16
-  - 🇯🇵JP-3.113.29.139-17
-  - 🇺🇸US-192.9.226.158-18
+  - 🇺🇸US-137.184.226.150-00
+  - 🇩🇪DE-138.68.97.165-01
+  - 🇱🇺LU-104.244.79.7-02
+  - 🇫🇷FR-193.70.33.128-03
+  - 🇺🇸US-45.88.148.234-04
+  - 🇺🇸US-45.82.253.234-05
+  - 🇺🇸US-212.90.123.130-06
+  - 🇭🇰HK-20.2.80.51-07
+  - 🇸🇬SG-129.150.33.76-08
+  - 🇸🇬SG-54.169.103.9-09
+  - 🇯🇵JP-202.8.9.67-10
+  - 🇯🇵JP-202.8.9.27-11
+  - 🇻🇳VN-103.173.255.21-12
+  - 🇻🇳VN-103.173.255.228-13
+  - 🇻🇳VN-103.195.236.24-14
+  - 🇩🇪DE-89.163.220.99-15
+  - 🇻🇳VN-103.3.244.135-16
+  - 🇳🇱NL-80.78.132.177-17
+  - 🇻🇳VN-103.173.255.234-18
+  - 🇺🇸US-194.5.154.17-19
+  - 🇻🇳VN-103.173.255.127-20
+  - 🇭🇰HK-112.120.41.144-21
+  - 🇹🇼TW-36.227.209.61-22
+  - 🇸🇬SG-20.24.44.110-23
+  - 🇹🇼TW-114.37.208.58-24
+  - 🇫🇷FR-163.172.87.145-25
+  - 🇺🇸US-18.144.83.110-26
+  - 🇭🇰HK-112.120.41.144-27
+  - 🇭🇰HK-112.120.41.144-28
+  - 🇯🇵JP-3.113.12.244-29
+  - 🇭🇰HK-112.120.41.144-30
+  - 🇸🇬SG-20.24.44.110-31
+  - 🇸🇬SG-20.24.44.110-32
+  - 🇸🇬SG-20.24.44.110-33
+  - 🇭🇰HK-218.188.148.30-34
+  - 🇭🇰HK-112.120.41.144-35
+  - 🇨🇳CN-36.138.221.76-36
+  - 🇨🇳CN-36.138.221.76-37
+  - 🇨🇳CN-36.138.221.76-38
+  - 🇨🇳CN-36.138.221.76-39
+  - 🇺🇸US-152.67.252.170-40
+  - 🇺🇸US-192.9.226.158-41
 - name: 谷歌服务
   type: select
   proxies:
