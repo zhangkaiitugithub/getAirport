@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/i3DrsmB4rNVxUHeW?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/GTaK2PWxspw4npb6?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-18 11:54:15
+## 上次更新于：2022-09-18 08:55:38
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: a2340212-4e29-306c-acac-fc4f015daa83
+    password: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.xyz
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: a2340212-4e29-306c-acac-fc4f015daa83
+    password: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     sni: a1.iacgbt.com
   -
     name: '🇭🇰 A-v1-香港三网优化'
     type: vmess
     server: ' hk4.bfstec.com'
     port: 34567
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -46,29 +46,11 @@ proxies:
       headers: { Host: ' hk4.bfstec.com' }
     tls: true
   -
-    name: '🇯🇵 A-V2-日本大阪-三网优化'
-    type: vmess
-    server: jp.bfstec.com
-    port: 34567
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: jp.bfstec.com
-    network: ws
-    ws-path: /123abc
-    ws-headers:
-      Host: jp.bfstec.com
-    ws-opts:
-      path: /123abc
-      headers: { Host: jp.bfstec.com }
-    tls: true
-  -
     name: '🇺🇲 A-v2-美国西部3'
     type: vmess
     server: a3.iacgbt.com
     port: 26012
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -86,7 +68,7 @@ proxies:
     type: vmess
     server: 103.117.100.8
     port: 3810
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -103,14 +85,14 @@ proxies:
     type: trojan
     server: hk3.bfstec.com
     port: 26014
-    password: a2340212-4e29-306c-acac-fc4f015daa83
+    password: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     sni: hk3.bfstec.com
   -
     name: '🇺🇲 A-v2美国1'
     type: vmess
     server: a17.iacgbt.com
     port: 26019
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -128,7 +110,7 @@ proxies:
     type: vmess
     server: a20.iacgbt.com
     port: 26021
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -146,21 +128,21 @@ proxies:
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: a2340212-4e29-306c-acac-fc4f015daa83
+    password: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     sni: nf-hk.iacgbt.com
   -
     name: '🇷🇺 v2-俄罗斯1'
     type: trojan
     server: a5.iacgbt.com
     port: 26014
-    password: a2340212-4e29-306c-acac-fc4f015daa83
+    password: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     sni: a5.iacgbt.com
   -
     name: '🇹🇼 v2-台湾1'
     type: vmess
     server: a2.iacgbt.com
     port: 26011
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -178,7 +160,7 @@ proxies:
     type: vmess
     server: shxg.iacgbt.com
     port: 26017
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -196,7 +178,7 @@ proxies:
     type: vmess
     server: a18.iacgbt.com
     port: 26020
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -214,7 +196,7 @@ proxies:
     type: vmess
     server: gzrb.iacgbt.com
     port: 26020
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -232,7 +214,7 @@ proxies:
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: a2340212-4e29-306c-acac-fc4f015daa83
+    uuid: 4bb90713-2740-3a7c-a06a-6be4f412eea3
     alterId: 0
     cipher: auto
     udp: true
@@ -244,7 +226,6 @@ proxy-groups:
       - 如不能使用请更新订阅
       - 官方网站：iacgbt.xyz
       - '🇭🇰 A-v1-香港三网优化'
-      - '🇯🇵 A-V2-日本大阪-三网优化'
       - '🇺🇲 A-v2-美国西部3'
       - '🇭🇰 A-v2-香港三网优化'
       - '🇭🇰 A-v2-香港三网优化2'
@@ -272,7 +253,6 @@ proxy-groups:
       - 如不能使用请更新订阅
       - 官方网站：iacgbt.xyz
       - '🇭🇰 A-v1-香港三网优化'
-      - '🇯🇵 A-V2-日本大阪-三网优化'
       - '🇺🇲 A-v2-美国西部3'
       - '🇭🇰 A-v2-香港三网优化'
       - '🇭🇰 A-v2-香港三网优化2'
@@ -293,7 +273,6 @@ proxy-groups:
       - 如不能使用请更新订阅
       - 官方网站：iacgbt.xyz
       - '🇭🇰 A-v1-香港三网优化'
-      - '🇯🇵 A-V2-日本大阪-三网优化'
       - '🇺🇲 A-v2-美国西部3'
       - '🇭🇰 A-v2-香港三网优化'
       - '🇭🇰 A-v2-香港三网优化2'
@@ -314,7 +293,6 @@ proxy-groups:
       - 如不能使用请更新订阅
       - 官方网站：iacgbt.xyz
       - '🇭🇰 A-v1-香港三网优化'
-      - '🇯🇵 A-V2-日本大阪-三网优化'
       - '🇺🇲 A-v2-美国西部3'
       - '🇭🇰 A-v2-香港三网优化'
       - '🇭🇰 A-v2-香港三网优化2'
@@ -335,7 +313,6 @@ proxy-groups:
       - 如不能使用请更新订阅
       - 官方网站：iacgbt.xyz
       - '🇭🇰 A-v1-香港三网优化'
-      - '🇯🇵 A-V2-日本大阪-三网优化'
       - '🇺🇲 A-v2-美国西部3'
       - '🇭🇰 A-v2-香港三网优化'
       - '🇭🇰 A-v2-香港三网优化2'
@@ -356,7 +333,6 @@ proxy-groups:
       - 如不能使用请更新订阅
       - 官方网站：iacgbt.xyz
       - '🇭🇰 A-v1-香港三网优化'
-      - '🇯🇵 A-V2-日本大阪-三网优化'
       - '🇺🇲 A-v2-美国西部3'
       - '🇭🇰 A-v2-香港三网优化'
       - '🇭🇰 A-v2-香港三网优化2'
