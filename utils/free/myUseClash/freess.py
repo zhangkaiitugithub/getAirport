@@ -93,7 +93,7 @@ class tempsite():
             try:
                 req=requests.get(sub_url,timeout=5) # 获取订阅内容
                 v2conf=req.text              # 将订阅内容的节点信息赋值v2conf
-                with open(out_list_file_path, 'a') as f:
+                with open(out_list_file_path, 'w') as f:
                     f.write(sub_url+'\n')            # 将订阅地址写入sub_url文件
                 break
             except:
