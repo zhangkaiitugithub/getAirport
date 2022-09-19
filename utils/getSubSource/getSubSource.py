@@ -16,7 +16,7 @@ def get_subSource():     #
     for url in url_list:        #读取url_list的地址
         new_url_list.append(url)
     free_list = '\n'.join(new_url_list)
-    with open(free_sublist_path,'w',encoding="UTF-8") as fp:     # 打开写入文件
+    with open(free_sublist_path,'a',encoding="UTF-8") as fp:     # 打开写入文件
         fp.write(free_list)
 		
 def sublist_update(sourceSublist):                  # 
