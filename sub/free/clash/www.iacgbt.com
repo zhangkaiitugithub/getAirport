@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/elubuoYZyfdACNHP?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/A1UtKhAO3kp1MHzt?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-22 11:47:11
+## 上次更新于：2022-09-22 09:02:47
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: a1.iacgbt.com
   -
     name: 官方网站2：iacgbt.xyz
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    uuid: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     alterId: 0
     cipher: auto
     udp: true
@@ -41,42 +41,42 @@ proxies:
     type: trojan
     server: jp1.bfstec.com
     port: 26011
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: jp1.bfstec.com
   -
     name: '🇭🇰 A-T-香港解锁NF和D+1'
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: nf-hk.iacgbt.com
   -
     name: '🇭🇰 A-T-香港'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: hk4.bfstec.com
   -
     name: '🇭🇰 A-T-香港2'
     type: trojan
     server: hk3.bfstec.com
     port: 26014
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: hk3.bfstec.com
   -
     name: '🇸🇬 A-V2 新加坡三网优化2'
     type: trojan
     server: sg2.bfstec.com
     port: 26033
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: sg2.bfstec.com
   -
     name: '🇭🇰 A-V2-香港4'
     type: vmess
     server: hk5.bfstec.com
     port: 26021
-    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    uuid: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     alterId: 0
     cipher: auto
     udp: true
@@ -94,14 +94,14 @@ proxies:
     type: trojan
     server: a5.iacgbt.com
     port: 26014
-    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    password: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     sni: a5.iacgbt.com
   -
     name: '🇹🇼 v2-台湾1'
     type: vmess
     server: a2.iacgbt.com
     port: 26011
-    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    uuid: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     alterId: 0
     cipher: auto
     udp: true
@@ -119,7 +119,7 @@ proxies:
     type: vmess
     server: a18.iacgbt.com
     port: 26020
-    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    uuid: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     alterId: 0
     cipher: auto
     udp: true
@@ -137,7 +137,7 @@ proxies:
     type: vmess
     server: us1.bfstec.com
     port: 34567
-    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    uuid: 01bc48aa-6c06-3582-869c-11c7ef67fec6
     alterId: 0
     cipher: auto
     udp: true
