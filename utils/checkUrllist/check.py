@@ -10,7 +10,7 @@ from datetime import datetime
 #check列表的位置
 urllist_path = './config/sublist_mining'
 
-def list_rm(url_list):
+def list_rm(url_list):  #列表去重
     begin = 0
     length = len(url_list)
     print(f'\n-----去重开始-----\n')
