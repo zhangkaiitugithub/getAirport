@@ -10,6 +10,22 @@ from datetime import datetime
 #check列表的位置
 urllist_path = './config/sublist_mining'
 
+def list_rm(url_list):
+    begin = 0
+    raw_length = len(url_list)
+    length = len(url_list)
+    while begin < length:
+        print(f'\n-----去重开始-----\n起始数量{length}')
+        proxy_compared = url_list[begin]
+        begin_2 = begin + 1
+        while begin_2 <= (length - 1):
+            if proxy_compared == url_list[begin_2]:
+                url_list.pop(begin_2)
+                length -= 1
+            begin_2 += 1
+        begin += 1
+    return url_list
+    
 def sub_check(url,bar):
     headers = {'User-Agent': 'ClashforWindows/0.18.1'}
     with thread_max_num:
@@ -49,6 +65,7 @@ if __name__=='__main__':
     with open(urllist_path, 'r') as f:
         data = f.read()
     url_list=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",data)#使用正则表达式查找订阅链接并创建列表
+    url_list=list_rm(url_list)    # 去重
     # url_list = data.split() :list
     thread_max_num =threading.Semaphore(32) #32线程
     bar = tqdm(total=len(url_list), desc='订阅筛选：')
