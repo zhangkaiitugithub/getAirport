@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/UF3WFrLmL7ccx1PL?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/elubuoYZyfdACNHP?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-21 09:06:28
+## 上次更新于：2022-09-22 11:47:11
 #---------------------------------------------------#
 
 port: 7890
@@ -18,145 +18,90 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
     sni: a1.iacgbt.com
   -
-    name: 官方网站：iacgbt.xyz
+    name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
     sni: a1.iacgbt.com
   -
-    name: '🇭🇰 A-V3-香港解锁NF和D+1'
+    name: 官方网站2：iacgbt.xyz
+    type: vmess
+    server: az.iacgbt.com
+    port: 0
+    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    alterId: 0
+    cipher: auto
+    udp: true
+  -
+    name: '🇯🇵 日本-大阪-1'
+    type: trojan
+    server: jp1.bfstec.com
+    port: 26011
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    sni: jp1.bfstec.com
+  -
+    name: '🇭🇰 A-T-香港解锁NF和D+1'
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
     sni: nf-hk.iacgbt.com
   -
-    name: '🇭🇰 A-v1-香港三网优化'
+    name: '🇭🇰 A-T-香港'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
     sni: hk4.bfstec.com
+  -
+    name: '🇭🇰 A-T-香港2'
+    type: trojan
+    server: hk3.bfstec.com
+    port: 26014
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
+    sni: hk3.bfstec.com
   -
     name: '🇸🇬 A-V2 新加坡三网优化2'
     type: trojan
     server: sg2.bfstec.com
     port: 26033
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
     sni: sg2.bfstec.com
   -
-    name: '🇺🇲 A-v2-美国西部3'
+    name: '🇭🇰 A-V2-香港4'
     type: vmess
-    server: a3.iacgbt.com
-    port: 26012
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: a3.iacgbt.com
-    network: ws
-    ws-path: /edit
-    ws-headers:
-      Host: a3.iacgbt.com
-    ws-opts:
-      path: /edit
-      headers: { Host: a3.iacgbt.com }
-    tls: true
-  -
-    name: '🇭🇰 A-v2-香港三网优化'
-    type: vmess
-    server: 103.117.100.8
-    port: 3810
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: 103.117.100.8
-    network: ws
-    ws-path: /sssy
-    ws-headers:
-      Host: 103.117.100.8
-    ws-opts:
-      path: /sssy
-      headers: { Host: 103.117.100.8 }
-  -
-    name: '🇭🇰 A-v2-香港三网优化2'
-    type: trojan
-    server: hk3.bfstec.com
-    port: 26014
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
-    sni: hk3.bfstec.com
-  -
-    name: '🇭🇰 A-v2-香港三网优化3'
-    type: vmess
-    server: hn2.zfnode.org
-    port: 26016
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: hn2.zfnode.org
-    network: ws
-    ws-path: /edit
-    ws-headers:
-      Host: hn2.zfnode.org
-    ws-opts:
-      path: /edit
-      headers: { Host: hn2.zfnode.org }
-    tls: true
-  -
-    name: '🇺🇲 A-v2美国1'
-    type: vmess
-    server: a17.iacgbt.com
-    port: 26019
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: a17.iacgbt.com
-    network: ws
-    ws-path: /edit
-    ws-headers:
-      Host: a17.iacgbt.com
-    ws-opts:
-      path: /edit
-      headers: { Host: a17.iacgbt.com }
-    tls: true
-  -
-    name: '🇭🇰 A-v2香港三网优化1'
-    type: vmess
-    server: a20.iacgbt.com
+    server: hk5.bfstec.com
     port: 26021
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
     alterId: 0
     cipher: auto
     udp: true
-    servername: a20.iacgbt.com
+    servername: hk5.bfstec.com
     network: ws
     ws-path: /edit
     ws-headers:
-      Host: a20.iacgbt.com
+      Host: hk5.bfstec.com
     ws-opts:
       path: /edit
-      headers: { Host: a20.iacgbt.com }
+      headers: { Host: hk5.bfstec.com }
     tls: true
   -
     name: '🇷🇺 v2-俄罗斯1'
     type: trojan
     server: a5.iacgbt.com
     port: 26014
-    password: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    password: 7b721ce2-375d-38da-b07a-3d9fa1036609
     sni: a5.iacgbt.com
   -
     name: '🇹🇼 v2-台湾1'
     type: vmess
     server: a2.iacgbt.com
     port: 26011
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
     alterId: 0
     cipher: auto
     udp: true
@@ -170,29 +115,11 @@ proxies:
       headers: { Host: a2.iacgbt.com }
     tls: true
   -
-    name: '🇸🇬 v2新加坡三网优化3'
-    type: vmess
-    server: shxg.iacgbt.com
-    port: 26017
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: a15.iacgbt.com
-    network: ws
-    ws-path: /edit
-    ws-headers:
-      Host: a15.iacgbt.com
-    ws-opts:
-      path: /edit
-      headers: { Host: a15.iacgbt.com }
-    tls: true
-  -
     name: '🇯🇵 v2日本三网优化1'
     type: vmess
     server: a18.iacgbt.com
     port: 26020
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
     alterId: 0
     cipher: auto
     udp: true
@@ -206,35 +133,41 @@ proxies:
       headers: { Host: a18.iacgbt.com }
     tls: true
   -
-    name: 官方网站2：iacgbt.xyz
+    name: '🇯🇵 日本-大阪-2'
     type: vmess
-    server: az.iacgbt.com
-    port: 0
-    uuid: 87f4fba0-2acf-3051-8cbf-c16b561916d3
+    server: us1.bfstec.com
+    port: 34567
+    uuid: 7b721ce2-375d-38da-b07a-3d9fa1036609
     alterId: 0
     cipher: auto
     udp: true
+    servername: us1.bfstec.com
+    network: ws
+    ws-path: /123abc
+    ws-headers:
+      Host: us1.bfstec.com
+    ws-opts:
+      path: /123abc
+      headers: { Host: us1.bfstec.com }
+    tls: true
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
       - 如不能使用请更新订阅
-      - 官方网站：iacgbt.xyz
-      - '🇭🇰 A-V3-香港解锁NF和D+1'
-      - '🇭🇰 A-v1-香港三网优化'
+      - 官方网站：iacgbt.com
+      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-1'
+      - '🇭🇰 A-T-香港解锁NF和D+1'
+      - '🇭🇰 A-T-香港'
+      - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇺🇲 A-v2-美国西部3'
-      - '🇭🇰 A-v2-香港三网优化'
-      - '🇭🇰 A-v2-香港三网优化2'
-      - '🇭🇰 A-v2-香港三网优化3'
-      - '🇺🇲 A-v2美国1'
-      - '🇭🇰 A-v2香港三网优化1'
+      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
-      - '🇸🇬 v2新加坡三网优化3'
       - '🇯🇵 v2日本三网优化1'
-      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-2'
       - 🚀直接连接
   -
     name: ⚓️其他流量
@@ -248,105 +181,90 @@ proxy-groups:
     proxies:
       - 🔰国外流量
       - 如不能使用请更新订阅
-      - 官方网站：iacgbt.xyz
-      - '🇭🇰 A-V3-香港解锁NF和D+1'
-      - '🇭🇰 A-v1-香港三网优化'
+      - 官方网站：iacgbt.com
+      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-1'
+      - '🇭🇰 A-T-香港解锁NF和D+1'
+      - '🇭🇰 A-T-香港'
+      - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇺🇲 A-v2-美国西部3'
-      - '🇭🇰 A-v2-香港三网优化'
-      - '🇭🇰 A-v2-香港三网优化2'
-      - '🇭🇰 A-v2-香港三网优化3'
-      - '🇺🇲 A-v2美国1'
-      - '🇭🇰 A-v2香港三网优化1'
+      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
-      - '🇸🇬 v2新加坡三网优化3'
       - '🇯🇵 v2日本三网优化1'
-      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-2'
   -
     name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
       - 如不能使用请更新订阅
-      - 官方网站：iacgbt.xyz
-      - '🇭🇰 A-V3-香港解锁NF和D+1'
-      - '🇭🇰 A-v1-香港三网优化'
+      - 官方网站：iacgbt.com
+      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-1'
+      - '🇭🇰 A-T-香港解锁NF和D+1'
+      - '🇭🇰 A-T-香港'
+      - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇺🇲 A-v2-美国西部3'
-      - '🇭🇰 A-v2-香港三网优化'
-      - '🇭🇰 A-v2-香港三网优化2'
-      - '🇭🇰 A-v2-香港三网优化3'
-      - '🇺🇲 A-v2美国1'
-      - '🇭🇰 A-v2香港三网优化1'
+      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
-      - '🇸🇬 v2新加坡三网优化3'
       - '🇯🇵 v2日本三网优化1'
-      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-2'
   -
     name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
       - 如不能使用请更新订阅
-      - 官方网站：iacgbt.xyz
-      - '🇭🇰 A-V3-香港解锁NF和D+1'
-      - '🇭🇰 A-v1-香港三网优化'
+      - 官方网站：iacgbt.com
+      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-1'
+      - '🇭🇰 A-T-香港解锁NF和D+1'
+      - '🇭🇰 A-T-香港'
+      - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇺🇲 A-v2-美国西部3'
-      - '🇭🇰 A-v2-香港三网优化'
-      - '🇭🇰 A-v2-香港三网优化2'
-      - '🇭🇰 A-v2-香港三网优化3'
-      - '🇺🇲 A-v2美国1'
-      - '🇭🇰 A-v2香港三网优化1'
+      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
-      - '🇸🇬 v2新加坡三网优化3'
       - '🇯🇵 v2日本三网优化1'
-      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-2'
   -
     name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
       - 如不能使用请更新订阅
-      - 官方网站：iacgbt.xyz
-      - '🇭🇰 A-V3-香港解锁NF和D+1'
-      - '🇭🇰 A-v1-香港三网优化'
+      - 官方网站：iacgbt.com
+      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-1'
+      - '🇭🇰 A-T-香港解锁NF和D+1'
+      - '🇭🇰 A-T-香港'
+      - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇺🇲 A-v2-美国西部3'
-      - '🇭🇰 A-v2-香港三网优化'
-      - '🇭🇰 A-v2-香港三网优化2'
-      - '🇭🇰 A-v2-香港三网优化3'
-      - '🇺🇲 A-v2美国1'
-      - '🇭🇰 A-v2香港三网优化1'
+      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
-      - '🇸🇬 v2新加坡三网优化3'
       - '🇯🇵 v2日本三网优化1'
-      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-2'
   -
     name: 🎬国外媒体
     type: select
     proxies:
       - 🔰国外流量
       - 如不能使用请更新订阅
-      - 官方网站：iacgbt.xyz
-      - '🇭🇰 A-V3-香港解锁NF和D+1'
-      - '🇭🇰 A-v1-香港三网优化'
+      - 官方网站：iacgbt.com
+      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-1'
+      - '🇭🇰 A-T-香港解锁NF和D+1'
+      - '🇭🇰 A-T-香港'
+      - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇺🇲 A-v2-美国西部3'
-      - '🇭🇰 A-v2-香港三网优化'
-      - '🇭🇰 A-v2-香港三网优化2'
-      - '🇭🇰 A-v2-香港三网优化3'
-      - '🇺🇲 A-v2美国1'
-      - '🇭🇰 A-v2香港三网优化1'
+      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
-      - '🇸🇬 v2新加坡三网优化3'
       - '🇯🇵 v2日本三网优化1'
-      - 官方网站2：iacgbt.xyz
+      - '🇯🇵 日本-大阪-2'
   -
     name: 🍎苹果服务
     type: select
