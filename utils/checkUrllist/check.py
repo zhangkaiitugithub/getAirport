@@ -12,10 +12,9 @@ urllist_path = './config/sublist_mining'
 
 def list_rm(url_list):
     begin = 0
-    raw_length = len(url_list)
     length = len(url_list)
+    print(f'\n-----去重开始-----\n')
     while begin < length:
-        print(f'\n-----去重开始-----\n起始数量{length}')
         proxy_compared = url_list[begin]
         begin_2 = begin + 1
         while begin_2 <= (length - 1):
