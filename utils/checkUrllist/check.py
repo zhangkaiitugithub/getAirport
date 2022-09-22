@@ -23,6 +23,7 @@ def list_rm(url_list):
                 length -= 1
             begin_2 += 1
         begin += 1
+    print(f'\n-----去重开始-----\n')
     return url_list
     
 def sub_check(url,bar):
