@@ -15,6 +15,8 @@
 > 其它功能: 抓取免费airport
 
 ## 仓库文档
+<details>
+  <summary>展开查看仓库文档</summary>
 ```
 fetchPorxy.main
 ├── .github──workflows──getSub.yml(actions Deploy)
@@ -55,6 +57,7 @@ fetchPorxy.main
 └── README.md
 
 ```
+</details>
 ### 使用注意
 >转码功能用到的`subconverter工具`
 >
