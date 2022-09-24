@@ -141,6 +141,8 @@ def urlListToSub(urllistfile):
     
     lines = re.split(r'\n+',urllist_content)
     allProxy = []
+    
+    #tqdm进度条方式显示fetch节点列表进度
     for index in tqdm(range(int(len(lines))), desc="Fetch:"):
         if 'http' in lines[index]:
             subContent =sub_convert.convert_remote(lines[index],'url','http://127.0.0.1:25500')
