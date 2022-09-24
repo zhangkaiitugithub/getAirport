@@ -12,10 +12,6 @@
 > 
 > 3.将可用订阅地址转成订阅 
 > 
-> 4.将转换的订阅测速
-> 
-> 5.将测速后的节点转订阅文件
-> 
 > 其它功能: 抓取免费airport
 
 ## 仓库文档
@@ -47,17 +43,6 @@ fetchPorxy.main
 │   │   ├── ip_update.py(下载country.mmdb文件)
 │   │   ├── urllist2sub.py(转换节点文件到'./sub/'目录下的订阅文件)
 │   │   └── sub_convert.py(转换订阅格式的功能模块)
-│   ├── checkclash(测速)
-│   │   ├── check2sub(转换成订阅)
-│   │   │   ├── ip_update.py(下载country.mmdb文件，默认output->'./country.mmdb')
-│   │   │   ├── check2sub.py(转换节点文件到'./sub/check/'目录下的订阅文件)
-│   │   │   └── sub_convert.py(转换订阅格式的功能模块，用到了'tindy2013/subconverter')
-│   │   ├── config.yaml(配置文件，里面设置，源文件位置，输出文件位置)
-│   │   ├── init.py(里面设置config.yaml文件位置)
-│   │   ├── main.py(多线程测速)
-│   │   ├── clash.py(main调用模块)
-│   │   ├── check.py(main调用模块)
-│   │   └── requirements.txt(此模块依赖库)
 │   ├── free(获取免费airport)
 │   │   ├── myUseClash ---(获取自用clash)
 │   │   ├── test ---(测试新的airport)
@@ -71,7 +56,11 @@ fetchPorxy.main
 
 ```
 ### 使用注意
-转码功能用到的`subconverter工具`，测速功能用到的`clash工具`，和IP库`country.mmdb`,已备份到'rx/all/githubTools'
+>转码功能用到的`subconverter工具`
+>
+>IP库`country.mmdb`
+>
+>已备份到'rx/all/githubTools'
 
 ## 仓库声明
 订阅节点仅作学习交流使用，只是对网络上节点的优选排序，用于查找资料，学习知识，不做任何违法行为。所有资源均来自互联网，仅供大家交流学习使用，出现违法问题概不负责。
