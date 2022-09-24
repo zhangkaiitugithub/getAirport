@@ -1,6 +1,6 @@
 import re, yaml
 import time, os
-from tqdm import tqdm   #进度条
+from tqdm import tqdm   #进度条库
 
 from ip_update import geoip_update  # 更新ip库Country.mmdb 
 from sub_convert import sub_convert
