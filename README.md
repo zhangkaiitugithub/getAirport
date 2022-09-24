@@ -55,7 +55,6 @@ fetchPorxy.main
 │   │   └── freess.py(获取'SSpanel'网站订阅)
 │   └── requirements.txt(依赖库)
 └── README.md
-
 ```
 </details>
 
