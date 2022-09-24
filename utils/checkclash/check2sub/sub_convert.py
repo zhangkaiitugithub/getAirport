@@ -6,6 +6,24 @@ from requests.adapters import HTTPAdapter
 
 import geoip2.database
 
+#默认mmdb位置
+countrymmdb_file = './Country.mmdb'
+
+#默认转clash配置文件.ini地址
+config_url = 'https://raw.githubusercontent.com/rxsweet/fetchProxy/main/config/provider/rxconfig.ini'
+
+#host备用网络地址 - 可用不用安装subconverter,直接使用这些网站
+url_host ={
+            'https://sub.id9.cc/',
+            'https://sub.xeton.dev/',
+            'https://api.dler.io/',
+            'https://sub.maoxiongnet.com/',
+            'https://api.wcc.best/',
+            'https://api.tsutsu.one/',
+            'https://pub-api-1.bianyuan.xyz/',
+            'https://api.sublink.dev/'
+          }
+
 class sub_convert():
 
     def main(raw_input, input_type='url', output_type='url', custom_set={'dup_rm_enabled': False, 'format_name_enabled': False}): # {'input_type': ['url', 'content'],'output_type': ['url', 'YAML', 'Base64']}
@@ -286,7 +304,7 @@ class sub_convert():
                     except Exception:
                         ip = server
 
-                with geoip2.database.Reader('./Country.mmdb') as ip_reader:
+                with geoip2.database.Reader(countrymmdb_file) as ip_reader:
                     try:
                         response = ip_reader.country(ip)
                         country_code = response.country.iso_code
@@ -609,22 +627,28 @@ class sub_convert():
             base64_content = base64.b64decode(url_content)
             base64_content_format = base64_content
             return str(base64_content)
-
-    def convert_remote(url='', output_type='clash', host='http://127.0.0.1:25500'): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
-        # 使用远程订阅转换服务，输出相应配置。
+            
+    # 使用远程订阅转换服务，输出相应配置,默认输出clash订阅格式
+    def convert_remote(url='', output_type='clash', host='http://127.0.0.1:25500',configUrl = config_url):
+        #url='订阅链接', 
+        #output_type={'clash': 输出可以订阅的Clash配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置, 'YAML': 输出 YAML 配置}, 
+        #host='远程订阅转化服务地址',configUrl转clash订阅时用
         sever_host = host
         url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html
         if output_type == 'clash':
-            converted_url = sever_host+'/sub?target=clash&url='+url+'&insert=false&emoji=true&list=true'
+            converted_url = sever_host+'/sub?target=clash&url='+url+'&insert=false&config='+configUrl+'&emoji=true'
+            print('\n'+converted_url+'\n')
             try:
                 resp = requests.get(converted_url)
+                print(resp)
             except Exception as err:
                 print(err)
                 return 'Url 解析错误'
             if resp.text == 'No nodes were found!':
                 sub_content = 'Url 解析错误'
+                print('Url 解析错误: No nodes were found!\n')
             else:
-                sub_content = sub_convert.makeup(sub_convert.format(resp.text), dup_rm_enabled=False, format_name_enabled=True)
+                sub_content = resp.text
         elif output_type == 'base64':
             converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
             try:
@@ -634,6 +658,7 @@ class sub_convert():
                 return 'Url 解析错误'
             if resp.text == 'No nodes were found!':
                 sub_content = 'Url 解析错误'
+                print('Url 解析错误: No nodes were found!\n')
             else:
                 sub_content = sub_convert.base64_encode(resp.text)
         elif output_type == 'url':
@@ -645,19 +670,51 @@ class sub_convert():
                 return 'Url 解析错误'
             if resp.text == 'No nodes were found!':
                 sub_content = 'Url 解析错误'
+                print('Url 解析错误: No nodes were found!\n')
             else:
                 sub_content = resp.text
+        elif output_type == 'YAML':
+            converted_url = sever_host+'/sub?target=clash&url='+url+'&insert=false&emoji=true&list=true'
+            try:
+                resp = requests.get(converted_url)
+            except Exception as err:
+                print(err)
+                return 'Url 解析错误'
+            if resp.text == 'No nodes were found!':
+                sub_content = 'Url 解析错误'
+                print('Url 解析错误: No nodes were found!\n')
+            else:
+                sub_content = sub_convert.makeup(sub_convert.format(resp.text), dup_rm_enabled=False, format_name_enabled=True)
 
         return sub_content
 
-
+    # 读取可用的URLhost(在线订阅转换地址)
+    # 要转换的订阅地址必须是网络订阅才可用使用网络URLhost，本地订阅文件获取不到数据
+    def use_urlhost(url=url_host):
+        s = requests.Session()                              # 用requests.session()创建session对象，相当于创建了一个空的会话框，准备保持cookies。
+        s.mount('http://', HTTPAdapter(max_retries=2))      # 重试次数为2
+        s.mount('https://', HTTPAdapter(max_retries=2))     # 重试次数为2
+        for index in url:
+            try:
+                resp = s.get(index, timeout=2)                    # 超时时间为2s
+                status = resp.status_code                       # 状态码赋值200？
+            except Exception:
+                status = 404
+            if status == 200:
+                print('url host use =='+index+'\n')
+                return index
+            else:
+                print('\n'+index+'  :url host is bad,please use new url!...\n')
+            
+        print('oh,my god ,all url host are bad,sorry no work!...\n')
+        return 'bad url Host'
 if __name__ == '__main__':
-    subscribe = 'https://fastly.jsdelivr.net/gh/alanbobs999/TopFreeProxies@master/sub/sub_merge.txt'
-    output_path = './output.txt'
-
-    content = sub_convert.main(subscribe, 'url', 'YAML')
+    subscribe = 'https://raw.githubusercontent.com/rxsweet/fetchProxy/main/sub/rx64'
+    output_path = './output.yml'
+    sub_convert.use_urlhost()
+    content = sub_convert.convert_remote(subscribe,'clash',sub_convert.use_urlhost())
 
     file = open(output_path, 'w', encoding= 'utf-8')
     file.write(content)
     file.close()
-    print(f'Writing content to output.txt\n')
+    print(f'Writing content to output.yml\n')
