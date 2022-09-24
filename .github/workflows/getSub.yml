@@ -40,11 +40,7 @@ jobs:
         wget -O subconverter.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
         tar -zxvf subconverter.tar.gz -C ./
         chmod +x ./subconverter/subconverter && nohup ./subconverter/subconverter >./subconverter.log 2>&1 &
-    - name: 安装测速工具-clash
-      run: |
-        wget -O clash-linuxamd64.gz https://github.com/Dreamacro/clash/releases/download/v1.11.4/clash-linux-amd64-v1.11.4.gz
-        gunzip clash-linuxamd64.gz
-        chmod +x ./clash-linuxamd64 && ./clash-linuxamd64 &
+        
     - name: 执行任务 - 1.get Sub Source
       run: |
         python ./utils/getSubSource/getSubSource.py
@@ -54,13 +50,7 @@ jobs:
     - name: 执行任务 - 3.urllist to sub
       run:
        python ./utils/checkUrllist/urllist2sub.py
-    - name: 执行任务 - 4.clashcheck 
-      run:
-       sudo chmod 777 clash-linuxamd64 && python ./utils/checkclash/main.py
-    - name: 执行任务 - 5.check2sub.py
-      run:
-       python ./utils/checkclash/check2sub/check2sub.py
-    - name: 执行任务 - 6.fetchFreeAirport
+    - name: 执行任务 - 4.fetchFreeAirport
       run: |
         python ./utils/free/main.py
         python ./utils/free/myUseClash/freess.py
