@@ -1,5 +1,6 @@
 import re, yaml
 import time, os
+from tqdm import tqdm   #进度条
 
 from ip_update import geoip_update  # 更新ip库Country.mmdb 
 from sub_convert import sub_convert
@@ -140,9 +141,9 @@ def urlListToSub(urllistfile):
     
     lines = re.split(r'\n+',urllist_content)
     allProxy = []
-    for line in lines:
-        if 'http' in line:
-            subContent =sub_convert.convert_remote(line,'url','http://127.0.0.1:25500')
+    for index in tqdm(range(int(len(lines))), desc="Fetch:"):
+        if 'http' in lines[index]:
+            subContent =sub_convert.convert_remote(lines[index],'url','http://127.0.0.1:25500')
             allProxy.append(subContent)
     ownallProxy = '\n'.join(allProxy)
     # 写入url 订阅文件
@@ -167,3 +168,5 @@ if __name__ == '__main__':
     #更新IP库
     geoip_update('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')
     urlListToSub(urllistfile)
+
+
