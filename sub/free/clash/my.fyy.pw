@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://fyy.pw/link/l9fnYA79ii9RjbUz?clash=1
+#!MANAGED-CONFIG https://fyy.pw/link/hzrk7WhtP0xdfJYW?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-23 09:01:07
+## 上次更新于：2022-09-24 11:49:45
 #---------------------------------------------------#
 
 port: 7890
@@ -14,6 +14,17 @@ external-controller: '0.0.0.0:9090'
 secret: ''
 proxies:
   -
+    name: 俄罗斯丨莫斯科丨ETH
+    type: ssr
+    server: 185.143.220.45
+    port: 53590
+    cipher: chacha20-ietf
+    password: VsWqMoSE
+    protocol: auth_aes128_md5
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
+    obfs: tls1.2_ticket_auth
+    obfs-param: ddc4022100.microsoft.com
+  -
     name: '官网：https://my.fyy.pw'
     type: ssr
     server: 127.0.0.2
@@ -21,20 +32,9 @@ proxies:
     cipher: chacha20-ietf
     password: VsWqMoSE
     protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
     obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
-  -
-    name: 美国丨洛杉矶丨ETH
-    type: ssr
-    server: 156.239.157.77
-    port: 53590
-    cipher: chacha20-ietf
-    password: VsWqMoSE
-    protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
-    obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
+    obfs-param: ddc4022100.microsoft.com
   -
     name: 美国丨洛杉矶丨GIA
     type: ssr
@@ -43,9 +43,9 @@ proxies:
     cipher: chacha20-ietf
     password: VsWqMoSE
     protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
     obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
+    obfs-param: ddc4022100.microsoft.com
   -
     name: '香港丨RERR丨TEST 01'
     type: ssr
@@ -54,9 +54,9 @@ proxies:
     cipher: chacha20-ietf
     password: VsWqMoSE
     protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
     obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
+    obfs-param: ddc4022100.microsoft.com
   -
     name: '香港丨RERR丨TEST 02'
     type: ssr
@@ -65,9 +65,9 @@ proxies:
     cipher: chacha20-ietf
     password: VsWqMoSE
     protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
     obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
+    obfs-param: ddc4022100.microsoft.com
   -
     name: '香港丨RERR丨TEST 03'
     type: ssr
@@ -76,9 +76,9 @@ proxies:
     cipher: chacha20-ietf
     password: VsWqMoSE
     protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
     obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
+    obfs-param: ddc4022100.microsoft.com
   -
     name: 香港丨下载丨1Gbps
     type: ssr
@@ -87,16 +87,16 @@ proxies:
     cipher: chacha20-ietf
     password: VsWqMoSE
     protocol: auth_aes128_md5
-    protocol-param: '22095:Xo77hTip4i6k88Ue'
+    protocol-param: '22100:NUNOZaNPypxoUsk1'
     obfs: tls1.2_ticket_auth
-    obfs-param: ef43a22095.microsoft.com
+    obfs-param: ddc4022100.microsoft.com
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
+      - 俄罗斯丨莫斯科丨ETH
       - '官网：https://my.fyy.pw'
-      - 美国丨洛杉矶丨ETH
       - 美国丨洛杉矶丨GIA
       - '香港丨RERR丨TEST 01'
       - '香港丨RERR丨TEST 02'
@@ -114,8 +114,8 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
+      - 俄罗斯丨莫斯科丨ETH
       - '官网：https://my.fyy.pw'
-      - 美国丨洛杉矶丨ETH
       - 美国丨洛杉矶丨GIA
       - '香港丨RERR丨TEST 01'
       - '香港丨RERR丨TEST 02'
@@ -126,8 +126,8 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
+      - 俄罗斯丨莫斯科丨ETH
       - '官网：https://my.fyy.pw'
-      - 美国丨洛杉矶丨ETH
       - 美国丨洛杉矶丨GIA
       - '香港丨RERR丨TEST 01'
       - '香港丨RERR丨TEST 02'
@@ -138,8 +138,8 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
+      - 俄罗斯丨莫斯科丨ETH
       - '官网：https://my.fyy.pw'
-      - 美国丨洛杉矶丨ETH
       - 美国丨洛杉矶丨GIA
       - '香港丨RERR丨TEST 01'
       - '香港丨RERR丨TEST 02'
@@ -150,8 +150,8 @@ proxy-groups:
     type: select
     proxies:
       - 🚀直接连接
+      - 俄罗斯丨莫斯科丨ETH
       - '官网：https://my.fyy.pw'
-      - 美国丨洛杉矶丨ETH
       - 美国丨洛杉矶丨GIA
       - '香港丨RERR丨TEST 01'
       - '香港丨RERR丨TEST 02'
@@ -162,8 +162,8 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
+      - 俄罗斯丨莫斯科丨ETH
       - '官网：https://my.fyy.pw'
-      - 美国丨洛杉矶丨ETH
       - 美国丨洛杉矶丨GIA
       - '香港丨RERR丨TEST 01'
       - '香港丨RERR丨TEST 02'

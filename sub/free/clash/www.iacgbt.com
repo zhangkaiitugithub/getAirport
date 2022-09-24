@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/KwQbi9kP0OLYKGy2?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/zr22hVY5NxRziYW1?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-23 09:01:05
+## 上次更新于：2022-09-24 11:49:43
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: a1.iacgbt.com
   -
     name: 官方网站2：iacgbt.xyz
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    uuid: eade7eb9-8980-394f-9d0b-4a724ec3130c
     alterId: 0
     cipher: auto
     udp: true
@@ -41,67 +41,49 @@ proxies:
     type: trojan
     server: jp1.bfstec.com
     port: 26011
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: jp1.bfstec.com
   -
     name: '🇭🇰 A-T-香港解锁NF和D+1'
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: nf-hk.iacgbt.com
   -
     name: '🇭🇰 A-T-香港'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: hk4.bfstec.com
   -
     name: '🇭🇰 A-T-香港2'
     type: trojan
     server: hk3.bfstec.com
     port: 26014
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: hk3.bfstec.com
   -
     name: '🇸🇬 A-V2 新加坡三网优化2'
     type: trojan
     server: sg2.bfstec.com
     port: 26033
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: sg2.bfstec.com
-  -
-    name: '🇭🇰 A-V2-香港4'
-    type: vmess
-    server: hk5.bfstec.com
-    port: 26021
-    uuid: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: hk5.bfstec.com
-    network: ws
-    ws-path: /edit
-    ws-headers:
-      Host: hk5.bfstec.com
-    ws-opts:
-      path: /edit
-      headers: { Host: hk5.bfstec.com }
-    tls: true
   -
     name: '🇷🇺 v2-俄罗斯1'
     type: trojan
     server: a5.iacgbt.com
     port: 26014
-    password: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
     sni: a5.iacgbt.com
   -
     name: '🇹🇼 v2-台湾1'
     type: vmess
     server: a2.iacgbt.com
     port: 26011
-    uuid: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    uuid: eade7eb9-8980-394f-9d0b-4a724ec3130c
     alterId: 0
     cipher: auto
     udp: true
@@ -119,7 +101,7 @@ proxies:
     type: vmess
     server: a18.iacgbt.com
     port: 26020
-    uuid: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    uuid: eade7eb9-8980-394f-9d0b-4a724ec3130c
     alterId: 0
     cipher: auto
     udp: true
@@ -137,7 +119,7 @@ proxies:
     type: vmess
     server: us1.bfstec.com
     port: 34567
-    uuid: 02fa9436-a8b7-330c-9a70-28ba063c6f1e
+    uuid: eade7eb9-8980-394f-9d0b-4a724ec3130c
     alterId: 0
     cipher: auto
     udp: true
@@ -150,6 +132,13 @@ proxies:
       path: /123abc
       headers: { Host: us1.bfstec.com }
     tls: true
+  -
+    name: '🇺🇲 美国-洛杉矶'
+    type: trojan
+    server: jp2.bfstec.com
+    port: 26011
+    password: eade7eb9-8980-394f-9d0b-4a724ec3130c
+    sni: jp2.bfstec.com
 proxy-groups:
   -
     name: 🔰国外流量
@@ -163,11 +152,11 @@ proxy-groups:
       - '🇭🇰 A-T-香港'
       - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
       - '🇯🇵 v2日本三网优化1'
       - '🇯🇵 日本-大阪-2'
+      - '🇺🇲 美国-洛杉矶'
       - 🚀直接连接
   -
     name: ⚓️其他流量
@@ -188,11 +177,11 @@ proxy-groups:
       - '🇭🇰 A-T-香港'
       - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
       - '🇯🇵 v2日本三网优化1'
       - '🇯🇵 日本-大阪-2'
+      - '🇺🇲 美国-洛杉矶'
   -
     name: 🎬Youtube
     type: select
@@ -206,11 +195,11 @@ proxy-groups:
       - '🇭🇰 A-T-香港'
       - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
       - '🇯🇵 v2日本三网优化1'
       - '🇯🇵 日本-大阪-2'
+      - '🇺🇲 美国-洛杉矶'
   -
     name: 🎬Netflix
     type: select
@@ -224,11 +213,11 @@ proxy-groups:
       - '🇭🇰 A-T-香港'
       - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
       - '🇯🇵 v2日本三网优化1'
       - '🇯🇵 日本-大阪-2'
+      - '🇺🇲 美国-洛杉矶'
   -
     name: 🎬哔哩哔哩
     type: select
@@ -242,11 +231,11 @@ proxy-groups:
       - '🇭🇰 A-T-香港'
       - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
       - '🇯🇵 v2日本三网优化1'
       - '🇯🇵 日本-大阪-2'
+      - '🇺🇲 美国-洛杉矶'
   -
     name: 🎬国外媒体
     type: select
@@ -260,11 +249,11 @@ proxy-groups:
       - '🇭🇰 A-T-香港'
       - '🇭🇰 A-T-香港2'
       - '🇸🇬 A-V2 新加坡三网优化2'
-      - '🇭🇰 A-V2-香港4'
       - '🇷🇺 v2-俄罗斯1'
       - '🇹🇼 v2-台湾1'
       - '🇯🇵 v2日本三网优化1'
       - '🇯🇵 日本-大阪-2'
+      - '🇺🇲 美国-洛杉矶'
   -
     name: 🍎苹果服务
     type: select
