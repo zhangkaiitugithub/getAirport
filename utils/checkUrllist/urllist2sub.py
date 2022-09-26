@@ -136,9 +136,9 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
 #test--begin    
 def sub_to_url(url):
     if 'http' in url:
-    subContent =sub_convert.convert_remote(url,'url','http://127.0.0.1:25500')        
-    allProxy.append(subContent)
-    bar.update(1)   #进度条完成1个线程
+        subContent =sub_convert.convert_remote(url,'url','http://127.0.0.1:25500')        
+        allProxy.append(subContent)
+    bar.update(1)
 #test--over  
 
 def urlListToSub(urllistfile):
