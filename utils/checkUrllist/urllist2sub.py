@@ -145,9 +145,10 @@ def urlListToSub(urllistfile):
     file_urllist = open(urllistfile, 'r', encoding='utf-8')
     urllist_content = file_urllist.read()
     file_urllist.close()
-    print(urllist_content+'\n')
-    lines = re.split(r'\n+',urllist_content)
-    lines=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",lines)#使用正则表达式查找订阅链接并创建列表
+    print(urllist_content+'\n') 
+    lines = urllist_content
+    #lines = re.split(r'\n+',urllist_content)
+    #lines=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",lines)#使用正则表达式查找订阅链接并创建列表
     allProxy = []
 #test--begin
     lenlines =len(lines)
