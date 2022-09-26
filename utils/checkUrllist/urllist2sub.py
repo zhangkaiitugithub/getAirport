@@ -134,43 +134,55 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
     Eternity_yml.write(config_yaml)
     Eternity_yml.close()
    
-def sub_to_url(url,bar,allProxy):
+def sub_to_url(url,bar,allProxy):   #将url订阅内容append到allProxy列表，并完成进度bar
     if 'http' in url:
         subContent =sub_convert.convert_remote(url,'url','http://127.0.0.1:25500')        
         allProxy.append(subContent)
     bar.update(1)
 
 
-def urlListToSub(urllistfile):
+def urlListToSub(urllistfile):  #将url订阅列表内容转换成url,base64,clash文件保存
+    
+    #打开url列表文件
     file_urllist = open(urllistfile, 'r', encoding='utf-8')
     urllist_content = file_urllist.read()
     file_urllist.close()
+    
+    #打开url列表文件内容，以行为单位存放到line列表
     lines = re.split(r'\n+',urllist_content)
     allProxy = []
-
+    
+    #计算打印url总数
     lenlines =len(lines)
     print('airport total == '+str(lenlines)+'\n')
+    
+    #Semaphore 是用于控制进入数量的锁，控制同时进行的线程，内部是基于Condition来进行实现的
+    #https://www.cnblogs.com/callyblog/p/11147456.html
+    #文件， 读、写， 写一般只是用于一个线程写，读可以允许有多个
     thread_max_num =threading.Semaphore(lenlines)
+    
+    #进度条添加
     bar = tqdm(total=lenlines, desc='订阅获取：')
     thread_list = []
+    
     for line in lines:
+        #为每个新URL创建线程
         t = threading.Thread(target=sub_to_url, args=(line,bar,allProxy))
+        #加入线程池
         thread_list.append(t)
-        t.setDaemon(True)
+        #setDaemon()线程守护，配合下面的一组for...t.join(),实现所有线程执行结束后，才开始执行下面代码
+        t.setDaemon(True)	#python多线程之t.setDaemon(True) 和 t.join()  https://www.cnblogs.com/my8100/p/7366567.html
+		#启动
         t.start()
+        
+    #等待所有线程完成，配合上面的t.setDaemon(True)
     for t in thread_list:
         t.join()
-    bar.close()
+    bar.close() #进度条结束
     
-    ownallProxy = '\n'.join(allProxy)
-    """
-    #tqdm进度条方式显示fetch节点列表进度
-    for index in tqdm(range(int(len(lines))), desc="Fetch:"):
-        if 'http' in lines[index]:
-            subContent =sub_convert.convert_remote(lines[index],'url','http://127.0.0.1:25500')
-            allProxy.append(subContent)
-    ownallProxy = '\n'.join(allProxy)
-    """
+    # 将列表内容，以行写入字符串？
+    ownallProxy = '\n'.join(allProxy)   
+
     # 写入url 订阅文件
     print('write miningUrl content!')
     file = open(outputUrlSub_path, 'w', encoding= 'utf-8')
