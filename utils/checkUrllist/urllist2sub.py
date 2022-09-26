@@ -151,7 +151,7 @@ def urlListToSub(urllistfile):
 #test--begin
     lenlines =len(lines)
     thread_max_num =threading.Semaphore(lenlines)
-    bar = tqdm(range(total=lenlines),, desc='订阅获取：')
+    bar = tqdm(range(total=lenlines), desc='订阅获取：')
     thread_list = []
     for line in lines:
         t = threading.Thread(target=sub_to_url, args=url)
