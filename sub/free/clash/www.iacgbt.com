@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/6r9JeUXKtno0seUc?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/Lhsw7zRcsP9ToELa?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-26 04:37:36
+## 上次更新于：2022-09-26 04:45:49
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: a1.iacgbt.com
   -
     name: 官方网站2：iacgbt.xyz
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -41,56 +41,56 @@ proxies:
     type: trojan
     server: cd1.bfstec.com
     port: 26033
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: cd1.bfstec.com
   -
     name: '🇭🇰  香港 | 103 | 流媒体优化 | 1x'
     type: trojan
     server: hk6.bfstec.com
     port: 26014
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: hk6.bfstec.com
   -
     name: '🇭🇰  香港 | 102 | 流媒体解锁 | 1x'
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: nf-hk.iacgbt.com
   -
     name: "🇺🇲 美国 | 102 | 负载优化 | 1x\t"
     type: trojan
     server: us2.bfstec.com
     port: 26011
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: us2.bfstec.com
   -
     name: '🇭🇰 香港 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: hk4.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: jp2.bfstec.com
     port: 26011
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: jp2.bfstec.com
   -
     name: '🇷🇺  俄罗斯 | 101 | 负载优化 | 1x'
     type: trojan
     server: a5.iacgbt.com
     port: 26014
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: a5.iacgbt.com
   -
     name: "🇷🇺 俄罗斯 | 102 | 负载优化 | 1x\t"
     type: vmess
     server: a5.iacgbt.com
     port: 34567
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -108,7 +108,7 @@ proxies:
     type: vmess
     server: cd1.bfstec.com
     port: 34567
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -126,7 +126,7 @@ proxies:
     type: vmess
     server: jp4.bfstec.com
     port: 34567
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -144,7 +144,7 @@ proxies:
     type: vmess
     server: jp2.bfstec.com
     port: 34567
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -162,7 +162,7 @@ proxies:
     type: vmess
     server: hk7.bfstec.com
     port: 34567
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -180,7 +180,7 @@ proxies:
     type: vmess
     server: hk6.bfstec.com
     port: 34567
-    uuid: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    uuid: 783b431a-ed39-3502-8ffa-e5888cdf213c
     alterId: 0
     cipher: auto
     udp: true
@@ -198,7 +198,7 @@ proxies:
     type: trojan
     server: hk3.bfstec.com
     port: 26014
-    password: 735be81c-7bf1-3658-8cbf-ea09ad2f1df0
+    password: 783b431a-ed39-3502-8ffa-e5888cdf213c
     sni: hk3.bfstec.com
 proxy-groups:
   -
