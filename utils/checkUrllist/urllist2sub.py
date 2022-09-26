@@ -154,6 +154,7 @@ def urlListToSub(urllistfile):
     bar = tqdm(total=lenlines, desc='订阅获取：')
     thread_list = []
     for line in lines:
+        print(line+'\n')
         t = threading.Thread(target=sub_to_url, args=line)
         thread_list.append(t)
         t.setDaemon(True)
