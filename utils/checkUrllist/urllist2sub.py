@@ -145,10 +145,7 @@ def urlListToSub(urllistfile):
     file_urllist = open(urllistfile, 'r', encoding='utf-8')
     urllist_content = file_urllist.read()
     file_urllist.close()
-    print(urllist_content+'\n\n\n')
     lines = re.split(r'\n+',urllist_content)
-    print('\nlines begin********************\n')
-    print(lines)
     allProxy = []
 
     lenlines =len(lines)
