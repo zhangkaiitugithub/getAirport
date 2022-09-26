@@ -134,7 +134,7 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
     Eternity_yml.write(config_yaml)
     Eternity_yml.close()
 #test--begin    
-def sub_to_url(url):
+def sub_to_url(url,bar):
     if 'http' in url:
         subContent =sub_convert.convert_remote(url,'url','http://127.0.0.1:25500')        
         allProxy.append(subContent)
@@ -145,19 +145,18 @@ def urlListToSub(urllistfile):
     file_urllist = open(urllistfile, 'r', encoding='utf-8')
     urllist_content = file_urllist.read()
     file_urllist.close()
-    print(urllist_content+'\n') 
     lines = urllist_content
     #lines = re.split(r'\n+',urllist_content)
     #lines=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",lines)#使用正则表达式查找订阅链接并创建列表
     allProxy = []
 #test--begin
     lenlines =len(lines)
+    print('lines  len == '+str(lenlines)+'\n')
     thread_max_num =threading.Semaphore(lenlines)
     bar = tqdm(total=lenlines, desc='订阅获取：')
     thread_list = []
     for line in lines:
-        print(line)
-        t = threading.Thread(target=sub_to_url, args=line)
+        t = threading.Thread(target=sub_to_url, args=args=(line,bar))
         thread_list.append(t)
         t.setDaemon(True)
         t.start()
