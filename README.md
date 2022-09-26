@@ -27,11 +27,6 @@ fetchPorxy.main
 │   ├── sublist_free.json(免费airport订阅列表) 
 │   └── sublist_mining.json(爬取的可用订阅列表) 	
 ├── sub
-│   ├── check──(测速后节点)
-│   │   ├── check.yaml(测速后的节点数据，靠此文件转换成订阅文件)
-│   │   ├── rx(url格式订阅)
-│   │   ├── rx64(base64格式订阅)
-│   │   └── rxClash.yml(clash格式订阅)
 │   ├── free(免费airport订阅)
 │   │   ├── clash---(clash格式订阅)
 │   │   ├── test---(test新资源)
