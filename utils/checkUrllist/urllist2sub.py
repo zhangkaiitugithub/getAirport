@@ -134,7 +134,7 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
     Eternity_yml.write(config_yaml)
     Eternity_yml.close()
 #test--begin    
-def sub_to_url(url,bar):
+def sub_to_url(url,bar,allProxy):
     if 'http' in url:
         subContent =sub_convert.convert_remote(url,'url','http://127.0.0.1:25500')        
         allProxy.append(subContent)
@@ -156,7 +156,7 @@ def urlListToSub(urllistfile):
     bar = tqdm(total=lenlines, desc='订阅获取：')
     thread_list = []
     for line in lines:
-        t = threading.Thread(target=sub_to_url, args=(line,bar))
+        t = threading.Thread(target=sub_to_url, args=(line,bar,allProxy))
         thread_list.append(t)
         t.setDaemon(True)
         t.start()
