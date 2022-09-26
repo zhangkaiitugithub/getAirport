@@ -133,13 +133,13 @@ def eternity_convert(file, config, output, provider_file_enabled=True):
     Eternity_yml = open(output, 'w+', encoding='utf-8')
     Eternity_yml.write(config_yaml)
     Eternity_yml.close()
-#test--begin    
+   
 def sub_to_url(url,bar,allProxy):
     if 'http' in url:
         subContent =sub_convert.convert_remote(url,'url','http://127.0.0.1:25500')        
         allProxy.append(subContent)
     bar.update(1)
-#test--over  
+
 
 def urlListToSub(urllistfile):
     file_urllist = open(urllistfile, 'r', encoding='utf-8')
@@ -147,11 +147,10 @@ def urlListToSub(urllistfile):
     file_urllist.close()
     
     lines = re.split(r'\n+',urllist_content)
-    #lines=re.findall("https?://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]",lines)#使用正则表达式查找订阅链接并创建列表
     allProxy = []
-#test--begin
+
     lenlines =len(lines)
-    print('lines  len == '+str(lenlines)+'\n')
+    print('airport total == '+str(lenlines)+'\n')
     thread_max_num =threading.Semaphore(lenlines)
     bar = tqdm(total=lenlines, desc='订阅获取：')
     thread_list = []
@@ -165,8 +164,6 @@ def urlListToSub(urllistfile):
     bar.close()
     
     ownallProxy = '\n'.join(allProxy)
-#test--over  
-
     """
     #tqdm进度条方式显示fetch节点列表进度
     for index in tqdm(range(int(len(lines))), desc="Fetch:"):
