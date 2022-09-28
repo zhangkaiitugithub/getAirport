@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/mSKvQrHSija8kQCG?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/jy2qdCGuqZlsEZJd?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-28 01:19:57
+## 上次更新于：2022-09-28 10:01:39
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: a1.iacgbt.com
   -
     name: v2ray节点秒识别.建议安卓使用Clash客户端
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: 93c47087-5391-3084-bb28-74c7237dfffc
+    uuid: 3e2e995e-48fe-38c1-b29c-61829335769f
     alterId: 0
     cipher: auto
     udp: true
@@ -41,56 +41,56 @@ proxies:
     type: trojan
     server: hk6.bfstec.com
     port: 26014
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: hk6.bfstec.com
   -
     name: '🇭🇰  香港 | 102 | 流媒体解锁 | 1x'
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: nf-hk.iacgbt.com
   -
     name: "🇺🇲 美国 | 102 | 负载优化 | 1x\t"
     type: trojan
     server: us2.bfstec.com
     port: 26011
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: us2.bfstec.com
   -
     name: '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
     type: trojan
     server: sg2.bfstec.com
     port: 26033
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: sg2.bfstec.com
   -
     name: '🇭🇰 香港 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: hk4.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: jp2.bfstec.com
     port: 26011
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: jp2.bfstec.com
   -
     name: "🇸🇬 新加坡 | 102 | AZ | 1x\t"
     type: trojan
     server: sg1.bfstec.com
     port: 26017
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: sg1.bfstec.com
   -
     name: '🇯🇵 日本 | 101 | 负载优化 | 1x'
     type: vmess
     server: jp4.bfstec.com
     port: 34567
-    uuid: 93c47087-5391-3084-bb28-74c7237dfffc
+    uuid: 3e2e995e-48fe-38c1-b29c-61829335769f
     alterId: 0
     cipher: auto
     udp: true
@@ -104,29 +104,11 @@ proxies:
       headers: { Host: jp4.bfstec.com }
     tls: true
   -
-    name: "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
-    type: vmess
-    server: hk7.bfstec.com
-    port: 34567
-    uuid: 93c47087-5391-3084-bb28-74c7237dfffc
-    alterId: 0
-    cipher: auto
-    udp: true
-    servername: hk7.bfstec.com
-    network: ws
-    ws-path: /edit
-    ws-headers:
-      Host: hk7.bfstec.com
-    ws-opts:
-      path: /edit
-      headers: { Host: hk7.bfstec.com }
-    tls: true
-  -
     name: '🇭🇰 香港 | 104 | AZ | 1x'
     type: trojan
     server: hk6.bfstec.com
     port: 26010
-    password: 93c47087-5391-3084-bb28-74c7237dfffc
+    password: 3e2e995e-48fe-38c1-b29c-61829335769f
     sni: hk6.bfstec.com
 proxy-groups:
   -
@@ -144,7 +126,6 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇸🇬 新加坡 | 102 | AZ | 1x\t"
       - '🇯🇵 日本 | 101 | 负载优化 | 1x'
-      - "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
       - '🇭🇰 香港 | 104 | AZ | 1x'
       - 🚀直接连接
   -
@@ -169,7 +150,6 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇸🇬 新加坡 | 102 | AZ | 1x\t"
       - '🇯🇵 日本 | 101 | 负载优化 | 1x'
-      - "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
       - '🇭🇰 香港 | 104 | AZ | 1x'
   -
     name: 🎬Youtube
@@ -187,7 +167,6 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇸🇬 新加坡 | 102 | AZ | 1x\t"
       - '🇯🇵 日本 | 101 | 负载优化 | 1x'
-      - "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
       - '🇭🇰 香港 | 104 | AZ | 1x'
   -
     name: 🎬Netflix
@@ -205,7 +184,6 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇸🇬 新加坡 | 102 | AZ | 1x\t"
       - '🇯🇵 日本 | 101 | 负载优化 | 1x'
-      - "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
       - '🇭🇰 香港 | 104 | AZ | 1x'
   -
     name: 🎬哔哩哔哩
@@ -223,7 +201,6 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇸🇬 新加坡 | 102 | AZ | 1x\t"
       - '🇯🇵 日本 | 101 | 负载优化 | 1x'
-      - "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
       - '🇭🇰 香港 | 104 | AZ | 1x'
   -
     name: 🎬国外媒体
@@ -241,7 +218,6 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇸🇬 新加坡 | 102 | AZ | 1x\t"
       - '🇯🇵 日本 | 101 | 负载优化 | 1x'
-      - "🇭🇰 香港 | 103 | 流媒体解锁 | 1x\t"
       - '🇭🇰 香港 | 104 | AZ | 1x'
   -
     name: 🍎苹果服务
