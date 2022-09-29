@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/G4szCvWHEtqcJtDM?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/xjyQm2R8ALjXJXiZ?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-09-29 10:06:22
+## 上次更新于：2022-09-29 04:30:04
 #---------------------------------------------------#
 
 port: 7890
@@ -14,25 +14,25 @@ external-controller: '0.0.0.0:9090'
 secret: ''
 proxies:
   -
-    name: 如不能使用请更新订阅
+    name: 建议2天更新一次订阅
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: a1.iacgbt.com
   -
     name: v2ray节点秒识别.建议安卓使用Clash客户端
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    uuid: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     alterId: 0
     cipher: auto
     udp: true
@@ -41,77 +41,77 @@ proxies:
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: nf-hk.iacgbt.com
   -
     name: '🇭🇰 香港 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: hk4.bfstec.com
   -
     name: '🇭🇰 香港 | 104 | 流媒体优化 | 1x'
     type: trojan
     server: hk7.bfstec.com
     port: 26010
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: hk7.bfstec.com
   -
     name: '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
     type: trojan
     server: sg2.bfstec.com
     port: 26033
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: sg2.bfstec.com
   -
     name: "🇸🇬 新加坡 | 102 | AZ | 1x\t"
     type: trojan
     server: sg1.bfstec.com
     port: 26017
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: sg1.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: jp2.bfstec.com
     port: 26011
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: jp2.bfstec.com
   -
     name: "🇯🇵 日本-官网：iacgbt.com\t"
     type: trojan
     server: a7.iacgbt.com
     port: 31100
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: a7.iacgbt.com
   -
     name: '🇺🇲 美国1-官网：iacgbt.com'
     type: trojan
     server: a1.iacgbt.com
     port: 30000
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: a1.iacgbt.com
   -
     name: "🇨🇦 加拿大-官网：iacgbt.com\t"
     type: trojan
     server: cd1.bfstec.com
     port: 26033
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: cd1.bfstec.com
   -
     name: "🇺🇲 美国2-官网：iacgbt.com\t"
     type: trojan
     server: us2.bfstec.com
     port: 26011
-    password: 64719ce3-0e42-33a2-ae4b-0a4fe075b957
+    password: 551bdf23-89df-3bfb-a0f1-530394d0d42a
     sni: us2.bfstec.com
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
-      - 如不能使用请更新订阅
+      - 建议2天更新一次订阅
       - 官方网站：iacgbt.com
       - v2ray节点秒识别.建议安卓使用Clash客户端
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
@@ -136,7 +136,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 如不能使用请更新订阅
+      - 建议2天更新一次订阅
       - 官方网站：iacgbt.com
       - v2ray节点秒识别.建议安卓使用Clash客户端
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
@@ -154,7 +154,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 如不能使用请更新订阅
+      - 建议2天更新一次订阅
       - 官方网站：iacgbt.com
       - v2ray节点秒识别.建议安卓使用Clash客户端
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
@@ -172,7 +172,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 如不能使用请更新订阅
+      - 建议2天更新一次订阅
       - 官方网站：iacgbt.com
       - v2ray节点秒识别.建议安卓使用Clash客户端
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
@@ -190,7 +190,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀直接连接
-      - 如不能使用请更新订阅
+      - 建议2天更新一次订阅
       - 官方网站：iacgbt.com
       - v2ray节点秒识别.建议安卓使用Clash客户端
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
@@ -208,7 +208,7 @@ proxy-groups:
     type: select
     proxies:
       - 🔰国外流量
-      - 如不能使用请更新订阅
+      - 建议2天更新一次订阅
       - 官方网站：iacgbt.com
       - v2ray节点秒识别.建议安卓使用Clash客户端
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
