@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/i0vS3urKm20mSGTl?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/JYIMsudgYp4gIbE7?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-10-01 01:21:49
+## 上次更新于：2022-10-01 10:22:11
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: a1.iacgbt.com
   -
     name: v2ray节点秒识别.建议安卓使用Clash客户端
     type: vmess
     server: az.iacgbt.com
     port: 0
-    uuid: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    uuid: da5d4b4f-6267-3575-9ed5-7da2346088be
     alterId: 0
     cipher: auto
     udp: true
@@ -41,77 +41,84 @@ proxies:
     type: trojan
     server: nf-hk.iacgbt.com
     port: 26014
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: nf-hk.iacgbt.com
   -
     name: '🇭🇰 香港 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: hk4.bfstec.com
     port: 26014
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: hk4.bfstec.com
   -
     name: '🇭🇰 香港 | 104 | 流媒体优化 | 1x'
     type: trojan
     server: hk7.bfstec.com
     port: 26010
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: hk7.bfstec.com
   -
     name: '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
     type: trojan
     server: sg2.bfstec.com
     port: 26033
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: sg2.bfstec.com
   -
     name: "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
     type: trojan
     server: sg1.bfstec.com
     port: 26017
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: sg1.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: trojan
     server: jp2.bfstec.com
     port: 26011
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: jp2.bfstec.com
+  -
+    name: '🇷🇺 俄罗斯1-官网：iacgbt.com'
+    type: trojan
+    server: a6.iacgbt.com
+    port: 30000
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
+    sni: a6.iacgbt.com
   -
     name: '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
     type: trojan
     server: a13.iacgbt.com
     port: 26015
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: a13.iacgbt.com
   -
     name: "🇯🇵 日本-官网：iacgbt.com\t"
     type: trojan
     server: a7.iacgbt.com
     port: 31100
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: a7.iacgbt.com
   -
     name: '🇺🇲 美国1-官网：iacgbt.com'
     type: trojan
     server: a1.iacgbt.com
     port: 30000
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: a1.iacgbt.com
   -
     name: "🇨🇦 加拿大-官网：iacgbt.com\t"
     type: trojan
     server: cd1.bfstec.com
     port: 26033
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: cd1.bfstec.com
   -
     name: "🇺🇲 美国2-官网：iacgbt.com\t"
     type: trojan
     server: us2.bfstec.com
     port: 26011
-    password: 96961aaf-b753-3055-b43f-65bf3e866c8a
+    password: da5d4b4f-6267-3575-9ed5-7da2346088be
     sni: us2.bfstec.com
 proxy-groups:
   -
@@ -127,6 +134,7 @@ proxy-groups:
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
+      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - "🇯🇵 日本-官网：iacgbt.com\t"
       - '🇺🇲 美国1-官网：iacgbt.com'
@@ -153,6 +161,7 @@ proxy-groups:
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
+      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - "🇯🇵 日本-官网：iacgbt.com\t"
       - '🇺🇲 美国1-官网：iacgbt.com'
@@ -172,6 +181,7 @@ proxy-groups:
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
+      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - "🇯🇵 日本-官网：iacgbt.com\t"
       - '🇺🇲 美国1-官网：iacgbt.com'
@@ -191,6 +201,7 @@ proxy-groups:
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
+      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - "🇯🇵 日本-官网：iacgbt.com\t"
       - '🇺🇲 美国1-官网：iacgbt.com'
@@ -210,6 +221,7 @@ proxy-groups:
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
+      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - "🇯🇵 日本-官网：iacgbt.com\t"
       - '🇺🇲 美国1-官网：iacgbt.com'
@@ -229,6 +241,7 @@ proxy-groups:
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
+      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - "🇯🇵 日本-官网：iacgbt.com\t"
       - '🇺🇲 美国1-官网：iacgbt.com'
