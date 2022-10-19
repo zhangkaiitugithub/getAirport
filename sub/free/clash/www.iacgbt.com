@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/yJx6eUc824fWHVo4?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/Ip3ph1bQqKi9vt8f?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-10-19 05:08:22
+## 上次更新于：2022-10-20 12:37:17
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,14 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: a1.iacgbt.com
-  -
-    name: 官方网站：iacgbt.com
-    type: trojan
-    server: azxg.iacgbt.com
-    port: 26010
-    password: fb34ec82-b613-37b5-967f-64500669a128
+    password: cb34caac-e28b-3609-9714-4326df39f99a
     sni: a1.iacgbt.com
   -
     name: '🇭🇰  香港 | 103 | 原生IP | 1x'
     type: vmess
     server: relay-us.bfstec.com
     port: 31002
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -41,7 +34,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 59083
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -50,7 +43,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 25119
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -59,23 +52,23 @@ proxies:
     type: vmess
     server: relay-tw1.bfstec.com
     port: 60783
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
   -
     name: '🇭🇰 香港 | 101 | 流媒体优化 | 1x'
     type: trojan
-    server: hk4.bfstec.com
-    port: 26016
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: relay-us.bfstec.com
+    server: hk3.bfstec.com
+    port: 3306
+    password: cb34caac-e28b-3609-9714-4326df39f99a
+    sni: hk3.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: vmess
     server: relay-hk2.bfstec.com
     port: 51959
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -84,7 +77,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 44275
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -93,7 +86,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 27152
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -102,7 +95,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 30157
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
@@ -111,52 +104,16 @@ proxies:
     type: vmess
     server: relay-sg.bfstec.com
     port: 52791
-    uuid: fb34ec82-b613-37b5-967f-64500669a128
+    uuid: cb34caac-e28b-3609-9714-4326df39f99a
     alterId: 0
     cipher: auto
     udp: true
-  -
-    name: '🇷🇺 俄罗斯1-官网：iacgbt.com'
-    type: trojan
-    server: a6.iacgbt.com
-    port: 30000
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: a6.iacgbt.com
-  -
-    name: "🇯🇵 日本-官网：iacgbt.com\t"
-    type: trojan
-    server: a7.iacgbt.com
-    port: 36950
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: cn-hnct.zeichuan.xyz
-  -
-    name: '🇺🇲 美国1-官网：iacgbt.com'
-    type: trojan
-    server: a1.iacgbt.com
-    port: 30000
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: a1.iacgbt.com
-  -
-    name: "🇨🇦 加拿大-官网：iacgbt.com\t"
-    type: trojan
-    server: cd.bfstec.com
-    port: 14699
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: cd.bfstec.com
-  -
-    name: "🇺🇲 美国2-官网：iacgbt.com\t"
-    type: trojan
-    server: us2.bfstec.com
-    port: 26011
-    password: fb34ec82-b613-37b5-967f-64500669a128
-    sni: us2.bfstec.com
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
       - 建议2天更新一次订阅
-      - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 原生IP | 1x'
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
@@ -167,11 +124,6 @@ proxy-groups:
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
-      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
-      - "🇯🇵 日本-官网：iacgbt.com\t"
-      - '🇺🇲 美国1-官网：iacgbt.com'
-      - "🇨🇦 加拿大-官网：iacgbt.com\t"
-      - "🇺🇲 美国2-官网：iacgbt.com\t"
       - 🚀直接连接
   -
     name: ⚓️其他流量
@@ -185,7 +137,6 @@ proxy-groups:
     proxies:
       - 🔰国外流量
       - 建议2天更新一次订阅
-      - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 原生IP | 1x'
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
@@ -196,18 +147,12 @@ proxy-groups:
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
-      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
-      - "🇯🇵 日本-官网：iacgbt.com\t"
-      - '🇺🇲 美国1-官网：iacgbt.com'
-      - "🇨🇦 加拿大-官网：iacgbt.com\t"
-      - "🇺🇲 美国2-官网：iacgbt.com\t"
   -
     name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
       - 建议2天更新一次订阅
-      - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 原生IP | 1x'
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
@@ -218,18 +163,12 @@ proxy-groups:
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
-      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
-      - "🇯🇵 日本-官网：iacgbt.com\t"
-      - '🇺🇲 美国1-官网：iacgbt.com'
-      - "🇨🇦 加拿大-官网：iacgbt.com\t"
-      - "🇺🇲 美国2-官网：iacgbt.com\t"
   -
     name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
       - 建议2天更新一次订阅
-      - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 原生IP | 1x'
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
@@ -240,18 +179,12 @@ proxy-groups:
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
-      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
-      - "🇯🇵 日本-官网：iacgbt.com\t"
-      - '🇺🇲 美国1-官网：iacgbt.com'
-      - "🇨🇦 加拿大-官网：iacgbt.com\t"
-      - "🇺🇲 美国2-官网：iacgbt.com\t"
   -
     name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
       - 建议2天更新一次订阅
-      - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 原生IP | 1x'
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
@@ -262,18 +195,12 @@ proxy-groups:
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
-      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
-      - "🇯🇵 日本-官网：iacgbt.com\t"
-      - '🇺🇲 美国1-官网：iacgbt.com'
-      - "🇨🇦 加拿大-官网：iacgbt.com\t"
-      - "🇺🇲 美国2-官网：iacgbt.com\t"
   -
     name: 🎬国外媒体
     type: select
     proxies:
       - 🔰国外流量
       - 建议2天更新一次订阅
-      - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 原生IP | 1x'
       - '🇭🇰  香港 | 102 | 流媒体优化 | 1x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
@@ -284,11 +211,6 @@ proxy-groups:
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
       - "🇸🇬 新加坡 | 102 | 电信联通 | 1x\t"
-      - '🇷🇺 俄罗斯1-官网：iacgbt.com'
-      - "🇯🇵 日本-官网：iacgbt.com\t"
-      - '🇺🇲 美国1-官网：iacgbt.com'
-      - "🇨🇦 加拿大-官网：iacgbt.com\t"
-      - "🇺🇲 美国2-官网：iacgbt.com\t"
   -
     name: 🍎苹果服务
     type: select
