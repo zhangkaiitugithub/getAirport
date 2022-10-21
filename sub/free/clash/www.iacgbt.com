@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/MI94WgnbraLaKsqS?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/zEppOAS6n6pPmrfU?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-10-21 09:46:47
+## 上次更新于：2022-10-21 04:31:38
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    password: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    password: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     sni: a1.iacgbt.com
   -
     name: '🇭🇰  香港 | 103 | 原生IP | 1x'
     type: vmess
     server: relay-us.bfstec.com
     port: 31002
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -41,7 +41,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 59083
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -50,7 +50,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 25119
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -59,7 +59,7 @@ proxies:
     type: vmess
     server: relay-tw1.bfstec.com
     port: 60783
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -68,14 +68,14 @@ proxies:
     type: trojan
     server: hk4.bfstec.com
     port: 3306
-    password: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    password: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     sni: hk4.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: vmess
-    server: relay-hk2.bfstec.com
+    server: relay-us2.bfstec.com
     port: 51959
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -84,25 +84,25 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 44275
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
   -
     name: '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
     type: vmess
-    server: relay-us.bfstec.com
+    server: relay-jp.bfstec.com
     port: 27152
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
   -
-    name: '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+    name: '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
     type: vmess
-    server: relay-us.bfstec.com
-    port: 30157
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    server: relay-sg1.bfstec.com
+    port: 11211
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -111,7 +111,7 @@ proxies:
     type: vmess
     server: relay-sg.bfstec.com
     port: 52791
-    uuid: f3d100c1-e7d7-395c-8bcc-0cb203cca66b
+    uuid: 65d0089e-ef8d-34af-b5fa-f2cd5d3f105e
     alterId: 0
     cipher: auto
     udp: true
@@ -130,7 +130,7 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
-      - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+      - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
       - "🇨🇳 韩国  | 101 | 江苏BGP | 1x\t"
       - 🚀直接连接
   -
@@ -154,7 +154,7 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
-      - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+      - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
       - "🇨🇳 韩国  | 101 | 江苏BGP | 1x\t"
   -
     name: 🎬Youtube
@@ -171,7 +171,7 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
-      - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+      - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
       - "🇨🇳 韩国  | 101 | 江苏BGP | 1x\t"
   -
     name: 🎬Netflix
@@ -188,7 +188,7 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
-      - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+      - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
       - "🇨🇳 韩国  | 101 | 江苏BGP | 1x\t"
   -
     name: 🎬哔哩哔哩
@@ -205,7 +205,7 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
-      - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+      - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
       - "🇨🇳 韩国  | 101 | 江苏BGP | 1x\t"
   -
     name: 🎬国外媒体
@@ -222,7 +222,7 @@ proxy-groups:
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
-      - '🇸🇬 新加坡 | 101 | 电信联通 | 1x'
+      - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
       - "🇨🇳 韩国  | 101 | 江苏BGP | 1x\t"
   -
     name: 🍎苹果服务
