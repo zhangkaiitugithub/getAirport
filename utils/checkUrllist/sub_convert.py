@@ -640,6 +640,7 @@ class sub_convert():
             return str(base64_content)
             
     # 使用远程订阅转换服务，输出相应配置,默认输出clash订阅格式
+    # 注意 订阅地址必须是base64,或者yaml，(直接是url节点内容的话，会解析错误)
     def convert_remote(url='', output_type='clash', host='http://127.0.0.1:25500',configUrl = config_url):
         #url='订阅链接', 
         #output_type={'clash': 输出可以订阅的Clash配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置, 'YAML': 输出 YAML 配置}, 
